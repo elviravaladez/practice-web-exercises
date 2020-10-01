@@ -10,3 +10,7 @@ function convert(minutes) {
     return minutes * 60;
 }
 
+//return next number from the integer passed
+function plusOne(num) {
+    return num + 1;
+}
