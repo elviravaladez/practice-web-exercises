@@ -25,3 +25,8 @@ function circuitPower(voltage, current) {
 function triArea(base, height) {
     return (base * height) / 2;
 }
+
+//Convert Hours into Seconds
+function howManySeconds(hours) {
+    return hours * 3600;
+}
