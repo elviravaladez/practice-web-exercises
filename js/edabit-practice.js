@@ -102,7 +102,16 @@ function log() {
 
 
 //Write a function log, that takes a parameter and logs this parameter.
-
 function log(parameter) {
     console.log(parameter);
+}
+
+
+//Write a function shout that takes a string and returns this
+// string duplicated. In addition, the return should be logged.
+
+// Example: shout('Fire') should return 'FireFire' and should log 'FireFire'.
+function shout(str) {
+    console.log(str + str);
+    return str + str;
 }
