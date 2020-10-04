@@ -91,3 +91,10 @@ function greet(parameter) {
 }
 
 var helloElvira = greet('Elvira');
+
+
+
+//Write a function log that logs 'Hello Console!'.
+function log() {
+    console.log('Hello Console!');
+}
