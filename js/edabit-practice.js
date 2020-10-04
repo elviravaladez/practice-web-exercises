@@ -98,3 +98,11 @@ var helloElvira = greet('Elvira');
 function log() {
     console.log('Hello Console!');
 }
+
+
+
+//Write a function log, that takes a parameter and logs this parameter.
+
+function log(parameter) {
+    console.log(parameter);
+}
