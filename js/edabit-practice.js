@@ -132,3 +132,28 @@ function length(str) {
 function toCase(str) {
     return str.toLowerCase() + "-" + str.toUpperCase();
 }
+
+
+
+//String: charAt()
+
+/*
+NOTE: To get a character from a string at a specified index, use the charAt(index) method:
+
+var char0 = 'Frantz'.charAt(0);
+var char1 = 'Frantz'.charAt(1);
+var char9 = 'Frantz'.charAt(9);
+
+The first character has the index 0. So char0 has the value 'F' and char1 has the value 'r'.
+If the index is larger than the index of the last character, the empty string is returned.
+So char9 has the value ''.
+ */
+
+
+//Write a function shortcut that takes two strings and returns the initial letters of theses strings.
+
+// Example: shortcut('Amnesty', 'International') should return 'AI'.
+
+function shortcut(str1, str2) {
+    return str1.charAt(0) + str2.charAt(0);
+}
