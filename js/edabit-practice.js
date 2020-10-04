@@ -157,3 +157,13 @@ So char9 has the value ''.
 function shortcut(str1, str2) {
     return str1.charAt(0) + str2.charAt(0);
 }
+
+
+//Write a function firstChar, which returns the first character that is not a space when a string is passed.
+
+// Example: firstChar(' Rosa Parks ') should return 'R'.
+
+function firstChar(name) {
+    var trimName = name.trim();
+    return trimName.charAt(0);
+}
