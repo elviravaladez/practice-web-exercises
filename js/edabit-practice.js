@@ -72,3 +72,13 @@ function remainder(x, y) {
 function lessThanOrEqualToZero(num) {
     return num <= 0;
 }
+
+
+//Write a function echo that also returns the passed parameter.
+// echo('Greta') should return 'Greta' and echo('CO2') should return 'CO2'
+function echo(input){
+    return input;
+}
+
+var greta = echo('Greta');
+var co2 = echo('CO2');
