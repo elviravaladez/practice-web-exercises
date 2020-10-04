@@ -43,3 +43,11 @@ function giveMeSomething(a) {
 function nextEdge(side1, side2) {
     return (side1 + side2) - 1;
 }
+
+
+//Find the Perimeter of a Rectangle:
+// Create a function that takes length and width
+//  and finds the perimeter of a rectangle.
+function findPerimeter(length, width) {
+    return (2 * length) + (2 * width);
+}
