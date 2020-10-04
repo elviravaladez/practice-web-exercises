@@ -82,3 +82,12 @@ function echo(input){
 
 var greta = echo('Greta');
 var co2 = echo('CO2');
+
+
+
+//Write a function greet having one parameter and returning 'Hello <parameter>!'.
+function greet(parameter) {
+    return 'Hello ' + parameter + '!';
+}
+
+var helloElvira = greet('Elvira');
