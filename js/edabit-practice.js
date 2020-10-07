@@ -318,3 +318,16 @@ function equilibrium (x) {
         return true;
     }
 }
+
+
+//Minimal II: Boolean Redundancy
+
+//Write a function that returns the string "even" if the given integer is even,
+// and the string "odd" if it's odd.
+function parity(n) {
+    if(n % 2 === 0) {
+        return "even";
+    } else {
+        return "odd";
+    }
+}
