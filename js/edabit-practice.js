@@ -195,3 +195,9 @@ function indexOfIgnoreCase(str1, str2) {
     var stringTwo = str2.toLowerCase();
     return stringOne.indexOf(stringTwo);
 }
+
+
+//Return the First Element in an Array
+function getFirstValue(arr) {
+    return arr.shift();
+}
