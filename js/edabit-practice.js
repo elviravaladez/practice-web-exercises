@@ -364,3 +364,20 @@ function flipBoolTwo(b) {
 function acceptIntoMovie(age, isSupervised) {
     return (age >= 15) || (isSupervised === true);
 }
+
+
+//Using Ternary Operators
+
+//Ternary operators are often more compact than multi-line if statements,
+// and are useful for simple conditional tests.
+
+//SYNTAX:
+//       condition ? result_if_true : result_if_false;
+
+
+//Write a function that uses the ternary operator to return "yeah"
+// if b is true, and "nope" otherwise.
+
+function yeah_nope(bool) {
+    return bool ? "yeah" : "nope";
+}
