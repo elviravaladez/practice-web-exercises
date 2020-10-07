@@ -389,3 +389,35 @@ function yeah_nope(bool) {
 function isLastCharacterN(word) {
     return word.endsWith("n");
 }
+
+
+
+//AND, OR, NOT
+//You will need to write three unfinished logic gates. Continue to write the
+// three logic gates: AND, OR, and NOT.
+
+//Examples:
+//AND(1, 1) ➞ 1
+// AND(0, 0) ➞ 0
+//
+// OR(1, 0) ➞ 1
+// OR(1, 1) ➞ 1
+//
+// NOT(0) ➞ 1
+// NOT(1) ➞ 0
+
+function NOT(n) {
+    if(!n) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+function AND(a, b) {
+    return a && b;
+}
+
+function OR(a, b) {
+    return a || b;
+}
