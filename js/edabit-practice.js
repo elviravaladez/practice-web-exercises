@@ -276,3 +276,30 @@ function profitableGamble(prob, prize, pay) {
         return false;
     }
 }
+
+//Minimal I: If Boolean Then Boolean
+
+//In line with the spirit of the series, we can summarize the general rules of minimalist code in two simple principles:
+//
+// Keep your code clean and readable.
+// While not violating the first principle: get rid of everything superfluous.
+
+
+//In order to achieve this you should:
+//
+// Deepen your knowledge of logics.
+// Deepen your understanding of the particular language you're coding with.
+// I would also add: observe and learn from the pros. Make a habit of checking the
+// Solutions tab after solving a challenge on Edabit.
+// There is absolutely nothing wrong in assimilating features of someone else's coding style,
+// especially if yours is not yet fully developed.
+
+//YOUR GOAL is to submit a function as minimalist as possible.
+
+
+//Write a function that returns true if the given integer is even, and false if it's odd.
+
+//TIP: Using an if statement in order to return boolean or to set a variable to a boolean is redundant.
+function isEven(n) {
+    return n % 2 === 0;
+}
