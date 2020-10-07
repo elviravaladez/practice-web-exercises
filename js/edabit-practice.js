@@ -331,3 +331,23 @@ function parity(n) {
         return "odd";
     }
 }
+
+//Flip the Boolean
+
+//Create a function that returns the opposite of the given boolean, as a number.
+
+//Due to a programming concept known as truthiness, certain values can be evaluated to
+// (i.e. take the place of) booleans. For example, 1 (or any number other than 0)
+// is often equivalent to true, and 0 is often equivalent to false.
+function flipBool(b) {
+    if(b === true || b > 0) {
+        return 0;
+    } else {
+        return 1;
+    }
+}
+
+//Another way!
+function flipBoolTwo(b) {
+    return (!b)*1;
+}
