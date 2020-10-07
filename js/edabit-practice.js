@@ -421,3 +421,31 @@ function AND(a, b) {
 function OR(a, b) {
     return a || b;
 }
+
+
+//Find the Bug: Returning the Container
+
+function getContainer(product) {
+    let container;
+    switch (product) {
+        case "Bread":
+            container = "bag";
+            break;
+        case "Beer":
+            container = "bottle";
+            break;
+        case "Milk":
+            container = "bottle";
+            break;
+        case "Cereals":
+            container = "box"
+            break;
+        case "Eggs":
+            container = "carton";
+            break;
+        case "Candy":
+            container = "plastic";
+            break;
+        default:
+            container = null;
+    }
