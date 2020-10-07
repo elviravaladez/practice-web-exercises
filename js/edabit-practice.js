@@ -464,3 +464,8 @@ function isEvenOrOdd(num) {
         return "odd";
     }
 }
+
+//Another Solution Using Ternary Operators
+function isEvenOrOddTwo(num) {
+    return num % 2 === 0 ? "even" : "odd";
+}
