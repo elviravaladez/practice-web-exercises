@@ -480,3 +480,12 @@ function isEvenOrOddTwo(num) {
 function search(arr, item) {
     return arr.indexOf(item);
 }
+
+
+//Solution to above with a for loop in the function
+// function search(arr, item) {
+//     for(var i = 0;i<arr.length;i++){
+//         if(arr[i] == item) return i;
+//     }
+//     return -1;
+// }
