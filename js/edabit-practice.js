@@ -469,3 +469,17 @@ function isEvenOrOdd(num) {
 function isEvenOrOddTwo(num) {
     return num % 2 === 0 ? "even" : "odd";
 }
+
+
+//Practicing JS Loops
+
+
+
+//Find the Index (Part 1)
+//Create a function that finds the index of a given item.
+//example:
+//search([9, 8, 3], 3) ➞ 2
+
+function search(arr, item) {
+    return arr.indexOf(item);
+}
