@@ -2,7 +2,7 @@
 console.log("JS Hero Practice Exercises");
 
 
-/*****VARIABLES********/
+/***** VARIABLES ********/
 
 //Declare a variable firstname and initialize it with the value 'Lata'.
 
@@ -13,4 +13,16 @@ var firstname = 'Lata';
 // second variable tree and assign it the value 'maple'.
 
 var flower = 'rose';
+
 var tree = 'maple';
+
+
+
+/****** FUNCTIONS ******/
+
+//Define a function hello that returns 'Hello world!'.
+
+function hello() {
+    return 'Hello world!';
+}
+
