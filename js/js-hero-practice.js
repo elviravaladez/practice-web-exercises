@@ -159,3 +159,18 @@ function firstChar(input) {
 }
 
 
+/******* String: indexOf() *******/
+
+//Write a function indexOfIgnoreCase taking two strings and determining the first occurrence of
+// the second string in the first string. The function should be case insensitive.
+//
+// Example: indexOfIgnoreCase('bit','it') and indexOfIgnoreCase('bit','IT') should return 1.
+
+function indexOfIgnoreCase(str1, str2) {
+    var str1 = str1.toLowerCase();
+    var str2 = str2.toLowerCase();
+    return str1.indexOf(str2);
+}
+
+
+
