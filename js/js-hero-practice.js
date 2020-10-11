@@ -92,3 +92,15 @@ function log() {
 function log(input) {
     console.log(input);
 }
+
+
+
+//Write a function shout that takes a string and returns this string
+// duplicated. In addition, the return should be logged.
+//
+// Example: shout('Fire') should return 'FireFire' and should log 'FireFire'.
+
+function shout(str) {
+    console.log(str + str);
+    return str + str;
+}
