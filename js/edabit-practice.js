@@ -525,3 +525,5 @@ function areaShape(base, height, shape) {
 // console.log(areaShape(3, 6, "cat"));
 // console.log(areaShape(3, 6, "triangle"));
 // console.log(areaShape(5, 15, "parallelogram"));
+
+
