@@ -283,3 +283,41 @@ function firstWord(str) {
 }
 
 console.log(firstWord("Hola amigo!"));
+
+
+
+
+
+
+
+/******* String: replace() ******/
+
+//NOTES:
+//The replace method replaces a substring with another:
+
+//var str = 'JavaScript';
+// var newstr = str.replace('Java', 'ECMA');
+
+
+//'Java' is replaced with 'ECMA'.
+// Thus newstr has the value 'ECMAScript'.
+// The original string remains unchanged.
+
+// Only the first occurrence is replaced:
+
+//var newstr = 'Dada'.replace('a', 'i');
+
+//newstr has the value 'Dida' and not 'Didi'.
+
+
+//Exercise:
+//Write a function normalize, that replaces '-' with '/' in a date string.
+//
+// Example: normalize('20-05-2017') should return '20/05/2017'.
+
+function normalize(str) {
+    var newStr = str.replace('-', '/');
+    return newStr.replace('-', '/');
+}
+
+console.log(normalize('20-05-2017'));
