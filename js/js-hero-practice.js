@@ -174,3 +174,15 @@ function indexOfIgnoreCase(str1, str2) {
 
 
 
+/***** String: indexOf() with from index *******/
+
+//Write a function secondIndexOf, taking two strings and determining the second
+// occurrence of the second string in the first string. If the search
+// string does not occur twice, -1 should be returned.
+//
+// Example: secondIndexOf('White Rabbit', 'it') should return 10.
+
+function secondIndexOf(str1, str2) {
+    var firstIndex = str1.indexOf(str2);
+    return str1.indexOf(str2, firstIndex + 1);
+}
