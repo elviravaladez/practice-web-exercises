@@ -548,4 +548,4 @@ function inchesToFeet(inches) {
     return inches / 12;
 }
 
-console.log(console.log(inchesToFeet(360)));
+// console.log(inchesToFeet(360));
