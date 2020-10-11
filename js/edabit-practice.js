@@ -489,3 +489,39 @@ function search(arr, item) {
 //     }
 //     return -1;
 // }
+
+
+
+
+//Triangle and Parallelogram Area Finder
+
+//Write a function that accepts base (decimal), height
+// (decimal) and shape ("triangle", "parallelogram")
+// as input and calculates the area of that shape.
+
+
+//EXAMPLES:
+//areaShape(2, 3, "triangle") ➞ 3
+//
+// areaShape(8, 6, "parallelogram") ➞ 48
+//
+// areaShape(2.9, 1.3, "parallelogram") ➞ 3.77
+
+//NOTES:
+//Area of a triangle is 0.5 * b * h
+// Area of a parallelogram is b * h
+// Assume triangle and parallelogram are the only inputs for shape.
+
+function areaShape(base, height, shape) {
+    if(shape === "triangle") {
+        return 0.5 * base * height;
+    } else if(shape === "parallelogram") {
+        return base * height;
+    } else {
+        return shape + " is not a valid shape."
+    }
+}
+
+console.log(areaShape(3, 6, "cat"));
+console.log(areaShape(3, 6, "triangle"));
+console.log(areaShape(5, 15, "parallelogram"));

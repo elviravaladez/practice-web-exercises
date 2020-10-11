@@ -70,6 +70,8 @@ var salutation = greet();
 
 
 
+
+
 /********* PARAMETERS **********/
 
 //Write a function echo that also returns the passed parameter. echo('Greta')
@@ -99,6 +101,8 @@ function greet(input){
 
 
 console.log(greet('Ada'));
+
+
 
 
 
@@ -143,6 +147,8 @@ console.log(shout('Fire'));
 
 
 
+
+
 /**** String: length ********/
 
 //Write a function length that takes a string and returns the number of characters of the string.
@@ -173,6 +179,7 @@ function toCase(str) {
 }
 
 console.log(toCase('Mthatha'));
+
 
 
 
@@ -321,3 +328,13 @@ function normalize(str) {
 }
 
 console.log(normalize('20-05-2017'));
+
+
+
+
+
+
+
+
+
+/****** NUMBERS ******/
