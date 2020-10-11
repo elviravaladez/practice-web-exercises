@@ -3,6 +3,9 @@ console.log("JS Hero Practice Exercises");
 
 
 
+
+
+
 /***** VARIABLES ********/
 
 //Declare a variable firstname and initialize it with the value 'Lata'.
@@ -19,6 +22,8 @@ console.log(flower);
 
 var tree = 'maple';
 console.log(tree);
+
+
 
 
 
@@ -59,6 +64,7 @@ function greet() {
 }
 
 var salutation = greet();
+
 
 
 
