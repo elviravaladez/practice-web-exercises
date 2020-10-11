@@ -549,3 +549,21 @@ function inchesToFeet(inches) {
 }
 
 // console.log(inchesToFeet(360));
+
+
+
+
+//How Much Corn Is There?
+//For every km there is five corn. Create a function that takes
+// an integer num and return the amount of corn.
+
+//EXAMPLES
+//corn(5) ➞ 25
+// corn(7) ➞ 35
+// corn(8) ➞ 40
+function corn(num) {
+    return num * 5;
+}
+
+// console.log(corn(4));
+
