@@ -356,6 +356,7 @@ console.log(add(1, 2));
 
 
 
+
 /******* FAHRENHEIT *******/
 
 //Write a function toFahrenheit that converts a temperature from Celsius to Fahrenheit.
@@ -363,4 +364,22 @@ console.log(add(1, 2));
 
 function toFahrenheit(temperature) {
     return (temperature * 9/5) + 32;
+}
+
+
+
+
+
+
+
+
+
+
+/******* MODULO *******/
+
+//Write a function onesDigit that takes a natural number and returns the ones digit of that number.
+// Example: onesDigit(2674) should return 4.
+
+function onesDigit(num) {
+    return num % 10;
 }
