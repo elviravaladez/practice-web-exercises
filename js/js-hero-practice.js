@@ -474,3 +474,19 @@ function area(radius) {
 function round100(num) {
     return Math.round(num / 100) * 100;
 }
+
+
+
+
+
+
+
+
+
+/******* RANDOM NUMBERS *********/
+
+//Write a function dice that returns like a dice a random number between 1 and 6.
+
+function dice() {
+    return Math.floor(Math.random() * (7 - 1) + 1);
+}
