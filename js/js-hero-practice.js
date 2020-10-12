@@ -420,3 +420,22 @@ function mean(num1, num2) {
 function hypotenuse(leg1, leg2){
     return Math.sqrt(Math.pow(leg1, 2) + Math.pow(leg2, 2));
 }
+
+
+
+
+
+
+
+
+/******* MIN AND MAX ******/
+
+//Write a function midrange, that calculates the midrange of 3 numbers.
+// The midrange is the mean of the smallest and largest number.
+// Example: midrange(3, 9, 1) should return (9+1)/2 = 5.
+
+function midrange(num1, num2, num3) {
+    var theMin = Math.min(num1, num2, num3);
+    var theMax = Math.max(num1, num2, num3);
+    return (theMin + theMax) / 2;
+}
