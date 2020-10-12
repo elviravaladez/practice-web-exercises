@@ -538,7 +538,6 @@ function nand(value1, value2) {
 
 
 
-
 //Write a function nor that takes two Boolean values. If both values are false,
 // the result should be true. In the other cases the return should be false.
 // I.e.: The call nor(false, false) should return true. The calls nor(true, false),
@@ -557,4 +556,24 @@ function nor(value1, value2) {
 
 function xor(value1, value2) {
     return !value1 === value2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/********** STRICT EQUALITY *********/
+
+//Write a function equals that checks two values for strict equality.
+// Example: equals(1, 1) should return true and equals(1, 2) should return false.
+
+function equals(value1, value2) {
+    return value1 === value2;
 }
