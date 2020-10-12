@@ -590,3 +590,21 @@ function equals(value1, value2, value3) {
 
 
 
+
+
+
+
+
+
+
+
+/********* EVEN NUMBERS *********/
+
+//Write a function isEven that checks if a passed number is even.
+// If the given number is even, true should be returned, otherwise false.
+
+// Example: isEven(2) should return true and isEven(3) should return false.
+
+function isEven(num) {
+    return num % 2 === 0;
+}
