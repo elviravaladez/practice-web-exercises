@@ -608,3 +608,32 @@ function equals(value1, value2, value3) {
 function isEven(num) {
     return num % 2 === 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+/******* STRICT INEQUALITY ******/
+
+//NOTES:
+//With !== two values are compared for strict inequality.
+    //let c1 = 'rose' !== 'Rose';
+    // let c2 = 10 !== '10';
+//Both comparisons result in true. The first one, because the two strings
+// differ in upper and lower case. The second, because the two values differ in type.
+
+//EXERCISE:
+//Write a function unequal that checks 3 values for strict inequality.
+// The function should return true if all three parameters are
+// strict unequal. Otherwise false.
+// Example: unequal(1, 2, 3) should return true and unequal(1, 1, 2) should return false.
+
+function unequal(value1, value2, value3) {
+    return (value1 !== value2) && (value2 !== value3) && (value1 !== value3);
+}
