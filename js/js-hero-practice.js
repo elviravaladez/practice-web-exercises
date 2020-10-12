@@ -439,3 +439,20 @@ function midrange(num1, num2, num3) {
     var theMax = Math.max(num1, num2, num3);
     return (theMin + theMax) / 2;
 }
+
+
+
+
+
+
+
+
+/******** Math.PI ********/
+
+//Write a function area that calculates the area of a circle.
+// The function is given the radius of the circle.
+// Example: area(1) should return π and area(2) should return 4 * π.
+
+function area(radius) {
+    return Math.PI * Math.pow(radius, 2);
+}
