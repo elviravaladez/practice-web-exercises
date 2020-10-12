@@ -828,3 +828,17 @@ function reverse(arr) {
 function animals(chickens, cows, pigs) {
     return (chickens * 2) + (cows * 4) + (pigs * 4);
 }
+
+
+//Find the Index
+//Create a function that takes an array and a string as arguments and return the index of the string.
+//EXAMPLES:
+//findIndex(["hi", "edabit", "fgh", "abc"], "fgh") ➞ 2
+// findIndex(["Red", "blue", "Blue", "Green"], "blue") ➞ 1
+// findIndex(["a", "g", "y", "d"], "d") ➞ 3
+// findIndex(["Pineapple", "Orange", "Grape", "Apple"], "Pineapple") ➞ 0
+
+function findIndex(arr, str) {
+    return arr.indexOf(str);
+}
+
