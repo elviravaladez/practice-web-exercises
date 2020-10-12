@@ -577,3 +577,16 @@ function xor(value1, value2) {
 function equals(value1, value2) {
     return value1 === value2;
 }
+
+
+
+//Write a function equals that checks 3 values for strict equality.
+// The function should only return true if all 3 values are equal.
+// Example: equals(1, 1, 1) should return true and equals(1, 2, 1) should return false.
+
+function equals(value1, value2, value3) {
+    return value1 === value2 && value1 === value3;
+}
+
+
+
