@@ -456,3 +456,21 @@ function midrange(num1, num2, num3) {
 function area(radius) {
     return Math.PI * Math.pow(radius, 2);
 }
+
+
+
+
+
+
+
+
+
+
+/******** ROUNDING *********/
+
+//Write a function round100 that rounds a number to the nearest hundred.
+// Example: round100(1749) should return 1700 and round100(856.12) should return 900.
+
+function round100(num) {
+    return Math.round(num / 100) * 100;
+}
