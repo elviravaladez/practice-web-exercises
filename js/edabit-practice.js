@@ -671,9 +671,21 @@ function relationToLuke(name) {
 
 
 //Return a String as an Integer
-
 //Create a function that takes a string and returns it as an integer.
 
 function stringInt(str) {
     return parseInt(str);
+}
+
+
+
+
+
+//Check if an Integer is Divisible By Five
+
+//Create a function that returns true if an integer is
+// evenly divisible by 5, and false otherwise.
+
+function divisibleByFive(n) {
+    return n % 5 === 0;
 }
