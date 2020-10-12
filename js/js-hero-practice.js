@@ -490,3 +490,27 @@ function round100(num) {
 function dice() {
     return Math.floor(Math.random() * (7 - 1) + 1);
 }
+
+
+
+
+
+
+
+
+
+
+/******* parseInt *******/
+
+//Write a function add that takes a string with a summation task and returns
+// its result as a number. Two natural numbers should be added.
+// The summation task is a string of the form '102+17'.
+
+// Example: add('102+17') should return 119.
+
+function add(str) {
+    var plusSign = str.indexOf("+");
+    var num1 = parseInt(str);
+    var num2 = parseInt(str.substring(plusSign));
+    return num1 + num2;
+}
