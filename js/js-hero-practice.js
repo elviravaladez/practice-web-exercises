@@ -637,3 +637,14 @@ function isEven(num) {
 function unequal(value1, value2, value3) {
     return (value1 !== value2) && (value2 !== value3) && (value1 !== value3);
 }
+
+
+
+
+
+
+
+
+
+
+/******* COMPARE NUMBERS *******/
