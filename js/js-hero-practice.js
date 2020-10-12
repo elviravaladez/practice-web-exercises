@@ -383,3 +383,20 @@ function toFahrenheit(temperature) {
 function onesDigit(num) {
     return num % 10;
 }
+
+
+
+
+
+
+
+
+
+/***** PARENTHESES *******/
+
+//Write a function mean that takes 2 numbers and returns their mean value.
+// Example: mean(1, 2) should return 1.5.
+
+function mean(num1, num2) {
+    return (num1 + num2) / 2;
+}
