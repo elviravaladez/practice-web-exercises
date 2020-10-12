@@ -347,3 +347,20 @@ function add(num1,num2) {
 }
 
 console.log(add(1, 2));
+
+
+
+
+
+
+
+
+
+/******* FAHRENHEIT *******/
+
+//Write a function toFahrenheit that converts a temperature from Celsius to Fahrenheit.
+//Example: toFahrenheit(0) should return 32.
+
+function toFahrenheit(temperature) {
+    return (temperature * 9/5) + 32;
+}
