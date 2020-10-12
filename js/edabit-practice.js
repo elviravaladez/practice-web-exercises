@@ -721,5 +721,11 @@ function length(str) {
 // makePair(512124, 215) ➞ [512124, 215]
 
 function makePair(num1, num2) {
-    return [num1, num2];
+    var arr = [];
+    arr.push(num1);
+    arr.push(num2);
+    return arr;
 }
+
+
+
