@@ -753,3 +753,24 @@ function absolute(n) {
 
     return n;
 }
+
+
+
+
+
+//Concatenate First and Last Name into One String
+
+//Given two strings, firstName and lastName, return a single string in the format "last, first".
+
+//EXAMPLES:
+// concatName("First", "Last") ➞ "Last, First"
+// concatName("John", "Doe") ➞ "Doe, John"
+// concatName("Mary", "Jane") ➞ "Jane, Mary"
+
+function concatName(firstName, lastName) {
+    return lastName + ", " + firstName;
+}
+
+
+
+
