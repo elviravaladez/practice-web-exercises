@@ -601,3 +601,28 @@ function imposterFormula(i, p) {
 function squared(a) {
     return a * a;
 }
+
+
+
+
+//Convert Age to Days
+
+//Create a function that takes the age and return the age in days.
+
+//NOTES:
+//Use 365 days as the length of a year for this challenge.
+// Ignore leap years and days between last birthday and now.
+// Expect only positive integer inputs.
+
+//EXAMPLES:
+//calcAge(65) ➞ 23725
+// calcAge(0) ➞ 0
+// calcAge(20) ➞ 7300
+
+function calcAge(age) {
+    return age * 365;
+}
+
+
+
+
