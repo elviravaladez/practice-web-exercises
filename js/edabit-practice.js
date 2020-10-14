@@ -880,3 +880,17 @@ function getVoteCount(votes) {
 function getLastItem(arr) {
     return arr.pop();
 }
+
+
+
+
+//Recreating the String.length Property
+//Create a function which returns the length of a string, WITHOUT using String.length property.
+
+function length(s) {
+    var total = 0;
+    for(var indexPoint = 0; s.charAt(indexPoint) !== "" ; indexPoint++) {
+        total++;
+    }
+    return total;
+}
