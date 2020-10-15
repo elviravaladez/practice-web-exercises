@@ -981,3 +981,11 @@ function hasKey(obj, key) {
 function isInRange(num, range) {
     return ((num >= range.min) && (num <= range.max )) ;
 }
+
+
+
+//Is the Object Empty?
+//Write a function that returns true if an object is empty, and false otherwise.
+function isEmpty(obj) {
+    return Object.keys(obj).length === 0;
+}
