@@ -967,3 +967,8 @@ function arrayToString(arr) {
 function hasKey(obj, key) {
     return obj != null && hasOwnProperty.call(obj, key);
 }
+
+//Another Solution
+function hasKey(obj, key) {
+    return key in obj;
+}
