@@ -960,3 +960,10 @@ function cityFacts(city) {
 function arrayToString(arr) {
     return arr.join("");
 }
+
+
+//Does the Object Contain a Given Key?
+//Write a function that returns true if a hash contains the specified key, and false otherwise.
+function hasKey(obj, key) {
+    return obj != null && hasOwnProperty.call(obj, key);
+}
