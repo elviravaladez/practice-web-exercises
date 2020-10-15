@@ -954,3 +954,9 @@ function volumeOfBox(sizes) {
 function cityFacts(city) {
     return city.name  + " has a population of " + city.population + " and is situated in " + city.continent;
 }
+
+
+//Return array turned to array with NO spaces
+function arrayToString(arr) {
+    return arr.join("");
+}
