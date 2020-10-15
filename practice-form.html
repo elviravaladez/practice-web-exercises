@@ -5,8 +5,16 @@
     <title>Practice Residential Lease Application</title>
 </head>
 <body>
+    <section>
+        <label for="received-on-date">Received on:</label>
+        <input type="date" id="received-on-date" name="received-on-date">
+
+        <label for="received-time">At:</label>
+        <input type="time" id="received-time" name="received-time">
+    </section>
+
     <header>
-        <h2>Texas Association of RealtorsⓇ</h2>
+        <h3>Texas Association of RealtorsⓇ</h3>
         <h1>RESIDENTIAL LEASE APPLICATION</h1>
     </header>
 
@@ -23,23 +31,73 @@
 
     <section>
         <form method="POST" action="https://hookb.in/lJP1olmK17urXXZWdgKm">
-                <label for="property-address">Property Address:</label>
-                <textarea id="property-address" name="property-address" rows="1" cols="75" placeholder="Type Address Here"></textarea>
-                <br>
-                <br>
+            <label for="property-address">Property Address:</label>
+            <textarea id="property-address" name="property-address" rows="1" cols="75" placeholder="Enter address here"></textarea>
+            <br>
+            <br>
 
+            <fieldset>
+                <legend>Anticipated</legend>
+
+                <label for="anticipated-move-in-date">Anticipated Move In Date:</label>
+                <input type="date" id="anticipated-move-in-date" name="anticipated-move-in-date" min="2020-10-15" max="2021-12-31">
+
+                <label for="anticipated-monthly-rent">Anticipated Monthly Rent: $</label>
+                <input type="number" id="anticipated-monthly-rent" name="anticipated-monthly-rent" min="0.00" max="10000.00">
+
+                <label for="anticipated-security-deposit">Anticipated Security Deposit: $</label>
+                <input type="number" id="anticipated-security-deposit" name="anticipated-security-deposit" min="0.00" max="10000.00">
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Applicant was referred by:</legend>
+
+                <label for="real-estate-agent">
+                    <input type="radio" id="real-estate-agent" name="referral" value="real-estate-agent">
+                    Real Estate Agent
+                </label>
+                <label for="newspaper">
+                    <input type="radio" id="newspaper" name="referral" value="newspaper">
+                    Newspaper
+                </label>
+                <label for="sign">
+                    <input type="radio" id="sign" name="referral" value="sign">
+                    Sign
+                </label>
+
+                <label for="internet">
+                    <input type="radio" id="internet" name="referral" value="internet">
+                    Internet
+                </label>
+                <label for="other">
+                    <input type="radio" id="other" name="referral" value="other">
+                    Other
+                </label>
+                <br>
+                <br>
                 <fieldset>
-                    <legend>Anticipated</legend>
-
-                    <label for="anticipated-move-in-date">Anticipated Move In Date:</label>
-                    <input type="date" id="anticipated-move-in-date" name="anticipated-move-in-date" min="2020-10-15" max="2021-12-31">
-
-                    <label for="anticipated-monthly-rent">Anticipated Monthly Rent: $</label>
-                    <input type="number" id="anticipated-monthly-rent" name="anticipated-monthly-rent" min="0.00" max="10000.00">
-
-                    <label for="anticipated-security-deposit">Anticipated Security Deposit: $</label>
-                    <input type="number" id="anticipated-security-deposit" name="anticipated-security-deposit" min="0.00" max="10000.00">
+                    <legend>
+                        If Applicable
+                    </legend>
+                    <label for="realtor-name">Real Estate Agent Name:</label>
+                    <br>
+                    <textarea id="realtor-name" placeholder="Enter real estate agent name here"cols="35" rows="1"></textarea>
+                    <br>
+                    <label for="realtor-number">Real Estate Agent Number:</label>
+                    <br>
+                    <input type="tel" id="realtor-number" name="realtor-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" minlength="9" maxlength="14">
                 </fieldset>
+
+
+            </fieldset>
+
+            <br>
+
+            <div>
+                <button>Submit</button>
+            </div>
 
         </form>
     </section>
