@@ -972,3 +972,12 @@ function hasKey(obj, key) {
 function hasKey(obj, key) {
     return key in obj;
 }
+
+
+
+//Check if Number is within a Given Range
+//Given a number and an object with min and max properties,
+// return true if the number lies within the given range (inclusive).
+function isInRange(num, range) {
+    return ((num >= range.min) && (num <= range.max )) ;
+}
