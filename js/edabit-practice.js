@@ -894,3 +894,26 @@ function length(s) {
     }
     return total;
 }
+
+
+
+
+
+
+
+
+//Volume of a Box
+
+//Create a function that takes an object argument sizes
+// (contains width, length, height keys) and returns the
+// volume of the box.
+
+//EXAMPLES:
+//volumeOfBox({ width: 2, length: 5, height: 1 }) ➞ 10
+// volumeOfBox({ width: 4, length: 2, height: 2 }) ➞ 16
+// volumeOfBox({ width: 2, length: 3, height: 5 }) ➞ 30
+
+function volumeOfBox(sizes) {
+    return sizes.width * sizes.height * sizes.length;
+}
+
