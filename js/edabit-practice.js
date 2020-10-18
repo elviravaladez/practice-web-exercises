@@ -1308,3 +1308,29 @@ function word(s) {
     const words = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
     return words.indexOf(s)
 }
+
+
+//Add a Consecutive List of Numbers
+
+//Write a function that takes the last number of a consecutive list of
+// numbers and returns the total of all numbers up to and including it.
+
+
+
+//EXAMPLES
+
+//addUpTo(3) ➞ 6
+// // 1 + 2 + 3 = 6
+
+// addUpTo(10) ➞ 55
+// // 1 + 2 + 3 + ... + 10 = 55
+
+// addUpTo(7) ➞ 28
+// // 1 + 2 + 3 + ... + 7 = 28
+function addUpTo(n) {
+    total = 0;
+    for(var i = 0; i <= n; i++) {
+        total += i;
+    }
+    return total;
+}
