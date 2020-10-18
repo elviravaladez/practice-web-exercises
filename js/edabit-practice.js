@@ -1804,3 +1804,7 @@ function countSyllables(str) {
 // helloName("Ed") ➞ "Hello Ed!"
 
 const helloName = name => "Hello " + name + "!";
+
+
+//Another solution
+const helloName = name => `Hello ${name}!`;
