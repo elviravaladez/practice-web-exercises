@@ -1136,3 +1136,26 @@ function addUp(num) {
     }
     return total;
 }
+
+
+
+//Adding Functions
+function add2(x) {
+    return x + 2;
+}
+
+function add3(x) {
+    return x + 3;
+}
+
+function add5(x) {
+    return x + 5;
+}
+
+function add7(x) {
+    return x + 7;
+}
+
+function add11(x) {
+    return x + 11;
+}
