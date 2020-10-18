@@ -1159,3 +1159,56 @@ function add7(x) {
 function add11(x) {
     return x + 11;
 }
+
+
+
+
+//Convert a Number to Base-2
+//Create a function that returns a base-2 (binary) representation
+// of a base-10 (decimal) string number. To convert is simple: ((2)
+// means base-2 and (10) means base-10) 010101001(2) = 1 + 8 + 32 + 128.
+//
+// Going from right to left, the value of the most right bit is
+// 1, now from that every bit to the left will be x2 the value,
+// value of an 8 bit binary numbers are (256, 128, 64, 32, 16, 8, 4, 2, 1).
+
+//EXAMPLES
+//binary(1) ➞ "1"
+// // 1*1 = 1
+// binary(5) ➞ "101"
+// // 1*1 + 1*4 = 5
+// binary(10) ➞ "1010"
+// // 1*2 + 1*8 = 10
+function binary(decimal) {
+    return decimal.toString(2);
+}
+
+
+//NOTES:
+// The Number object overrides the toString() method of the Object object.
+// (It does not inherit Object.prototype.toString()). For Number
+// objects, the toString() method returns a string representation
+// of the object in the specified radix.
+
+// The toString() method parses its first argument, and
+// attempts to return a string representation in the specified radix (base).
+
+//OUTCOMES FROM TEST
+// Test.assertEquals(binary(100), "1100100")
+// Test.assertEquals(binary(1), "1")
+// Test.assertEquals(binary(0), "0")
+// Test.assertEquals(binary(69), "1000101")
+// Test.assertEquals(binary(1023), "1111111111")
+// Test.assertEquals(binary(511), "111111111")
+// Test.assertEquals(binary(666), "1010011010")
+// Test.assertEquals(binary(123), "1111011")
+
+
+//Test Passed: Value == '1100100'
+// Test Passed: Value == '1'
+// Test Passed: Value == '0'
+// Test Passed: Value == '1000101'
+// Test Passed: Value == '1111111111'
+// Test Passed: Value == '111111111'
+// Test Passed: Value == '1010011010'
+// Test Passed: Value == '1111011'
