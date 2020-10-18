@@ -1605,3 +1605,18 @@ function carsNeeded(n) {
 function isPlural(word) {
     return word.endsWith('s');
 }
+
+
+
+//On/Off Switches
+//Create a function that returns how many possible
+// outcomes can come from a certain number of switches (on / off).
+//All numbers will be whole and positive.
+
+//EXAMPLES:
+//posCom(1) ➞ 2
+// posCom(3) ➞ 8
+// posCom(10) ➞ 1024
+function posCom(num) {
+    return Math.pow(2, num);
+}
