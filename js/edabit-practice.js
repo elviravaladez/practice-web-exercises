@@ -1347,3 +1347,28 @@ function addUpTo(n) {
 function newWord(str) {
     return str.substring(1);
 }
+
+
+
+//Summing the Squares
+///Create a function that takes a number n and returns the sum of all square numbers up to and including n.
+
+//EXAMPLES
+//squaresSum(3) ➞ 14
+// // 1² + 2² + 3² =
+// // 1 + 4 + 9 =
+// // 14
+
+
+
+//squaresSum(3) ➞ 14
+// squaresSum(12) ➞ 650
+// squaresSum(13) ➞ 819
+
+function squaresSum(n) {
+    var total = 0;
+    for(var numBeforeN = 0; numBeforeN <= n; numBeforeN++) {
+        total = total + numBeforeN * numBeforeN;
+    }
+    return total;
+}
