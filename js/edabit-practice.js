@@ -1678,3 +1678,21 @@ function hasSameBread(arr1, arr2) {
 function hasSameBread(arr1, arr2) {
     return arr1[0] === arr2[0] && arr1[2] === arr2[2];
 }
+
+
+
+
+//Minimal VI: Ternary Operator
+//Write a function that returns the strings:
+
+
+// "both" if both given booleans a and b are true.
+// "first" if only a is true.
+// "second" if only b is true .
+// "neither" if both a and b are false.
+function areTrue(a, b) {
+    return (a == true && b == true) ? "both"
+        : a == true ? "first"
+            : b == true ? "second"
+                : "neither";
+}
