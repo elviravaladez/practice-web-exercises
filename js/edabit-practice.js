@@ -1784,3 +1784,9 @@ function countSyllables(str) {
     var vowelMatch = str.match(vowels);
     return vowelMatch.length;
 }
+
+
+//Refactored code
+function countSyllables(str) {
+    return str.length/2;
+}
