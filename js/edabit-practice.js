@@ -1212,3 +1212,42 @@ function binary(decimal) {
 // Test Passed: Value == '111111111'
 // Test Passed: Value == '1010011010'
 // Test Passed: Value == '1111011'
+
+
+
+
+
+
+//Concatenating Two Integer Arrays
+//Create a function to concatenate two integer arrays.
+//EXAMPLE:
+//concat([1, 3, 5], [2, 6, 8]) ➞ [1, 3, 5, 2, 6, 8]
+// concat([7, 8], [10, 9, 1, 1, 2]) ➞ [7, 8, 10, 9, 1, 1, 2]
+// concat([4, 5, 1], [3, 3, 3, 3, 3]) ➞ [4, 5, 1, 3, 3, 3, 3, 3]
+function concat(arr1, arr2) {
+    return arr1.concat(arr2);
+}
+
+
+//Evaluate an Equation
+//Create a function that evaluates an equation.
+
+//EXAMPLES
+///eq("1+2") ➞ 3
+// eq("6/(9-7)") ➞ 3
+// eq("3+2-4") ➞ 1
+function eq(evaluate) {
+    return eval(evaluate);
+}
+
+
+//Stack the Boxes
+//Write a function that takes a number n and returns the number
+// of stacked boxes in a model n levels high, visible and invisible.
+//EXAMPLES:
+//stackBoxes(1) ➞ 1
+// stackBoxes(2) ➞ 4
+// stackBoxes(0) ➞ 0
+function stackBoxes(n) {
+    return Math.pow(n, 2);
+}
