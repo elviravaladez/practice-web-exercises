@@ -1849,3 +1849,21 @@ function check(arr, el) {
 function starNumber(n) {
     return (6 * n * (n - 1) + 1); ;
 }
+
+
+
+
+//Does a Number Exist?
+//Create a function which validates whether a given number
+// exists, and could represent a real life quantity.
+// Inputs will be given as a string.
+
+//EXAMPLES
+//validStrNumber("3.2") ➞ true
+// validStrNumber("324") ➞ true
+// validStrNumber("54..4") ➞ false
+// validStrNumber("number") ➞ false
+
+function validStrNumber(n) {
+    return !isNaN(n);
+}
