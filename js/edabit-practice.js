@@ -1696,3 +1696,11 @@ function areTrue(a, b) {
             : b == true ? "second"
                 : "neither";
 }
+
+//Refactored Code
+function areTrue(a, b) {
+    return a && b ? 'both'
+        : a ? 'first'
+            : b ? 'second'
+                : 'neither'
+}
