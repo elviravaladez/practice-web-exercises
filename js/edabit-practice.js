@@ -1474,3 +1474,18 @@ function hasSpaces(str) {
 function howManyStickers(n) {
     return Math.pow(n, 2) * 6;
 }
+
+
+//Tuck in Array
+//Create a function that takes two arrays and insert the second array in the middle of the first array.
+
+//EXAMPLES
+// tuckIn([1, 10], [2, 3, 4, 5, 6, 7, 8, 9]) ➞ [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// tuckIn([15,150], [45, 75, 35]) ➞ [15, 45, 75, 35, 150]
+// tuckIn([[1, 2], [5, 6]], [[3, 4]]) ➞ [[1, 2], [3, 4], [5, 6]]
+function tuckIn(arr1, arr2) {
+    var lastNum = arr1.pop();
+    var concat = arr1.concat(arr2);
+    concat.push(lastNum);
+    return concat;
+}
