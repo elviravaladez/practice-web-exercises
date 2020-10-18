@@ -1620,3 +1620,18 @@ function isPlural(word) {
 function posCom(num) {
     return Math.pow(2, num);
 }
+
+
+
+//Return the Total Number of Parameters
+//Create a function that returns the total number of
+// parameters passed in.
+
+//EXAMPLES
+//numberArgs("a", "b", "c") ➞ 3
+// numberArgs(10, 20, 30, 40, 50) ➞ 5
+// numberArgs(x, y) ➞ 2
+// numberArgs() ➞ 0
+function numberArgs(arg) {
+    return arguments.length;
+}
