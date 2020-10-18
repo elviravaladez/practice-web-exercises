@@ -1673,3 +1673,8 @@ function hasSameBread(arr1, arr2) {
     }
     return false;
 }
+
+//Refactored hasSameBread function
+function hasSameBread(arr1, arr2) {
+    return arr1[0] === arr2[0] && arr1[2] === arr2[2];
+}
