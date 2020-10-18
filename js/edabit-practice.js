@@ -1441,3 +1441,19 @@ function isOdd(num) {
 function search(arr, item) {
     return arr.indexOf(item);
 }
+
+
+//Check String for Spaces
+//Create a function that returns true if a string contains any spaces.
+//An empty string does not contain any spaces.
+
+//EXAMPLES
+
+//hasSpaces("hello") ➞ false
+// hasSpaces("hello, world") ➞ true
+// hasSpaces(" ") ➞ true
+// hasSpaces("") ➞ false
+// hasSpaces(",./!@#") ➞ false
+function hasSpaces(str) {
+    return str.includes(" ");
+}
