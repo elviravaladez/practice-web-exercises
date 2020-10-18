@@ -1524,3 +1524,16 @@ function stackBoxes(n) {
 function fart(beans) {
     return Math.pow(beans, 2) * 2 + (beans * 5) + 3;
 }
+
+
+//Count the Arguments
+//Create a function that returns the number of arguments it was called with.
+//EXAMPLES:
+//numArgs() ➞ 0
+// numArgs("foo") ➞ 1
+// numArgs("foo", "bar") ➞ 2
+// numArgs(true, false) ➞ 2
+// numArgs({}) ➞ 1
+function numArgs() {
+    return arguments.length;
+}
