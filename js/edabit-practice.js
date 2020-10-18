@@ -1301,3 +1301,10 @@ function word(s) {
             return "Not a valid number";
     }
 }
+
+
+//Refactored word function
+function word(s) {
+    const words = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+    return words.indexOf(s)
+}
