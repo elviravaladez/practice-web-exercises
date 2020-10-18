@@ -1506,3 +1506,21 @@ function tuckIn(arr1, arr2) {
 function stackBoxes(n) {
     return Math.pow(n, 2);
 }
+
+
+
+
+
+//How Many Beans Has Joker Persona 5 Eaten?
+//Beans make Joker Persona 5 fart a lot. You can determine how hard he farts by
+// how many beans he has eaten. The strength of the fart is equal to twice the
+// square of the bean count plus 5 times the bean count, plus 3.
+
+//EXAMPLES
+//fart(3) ➞ 36
+// fart(0) ➞ 3
+// fart(6) ➞ 105
+
+function fart(beans) {
+    return Math.pow(beans, 2) * 2 + (beans * 5) + 3;
+}
