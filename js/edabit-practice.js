@@ -1736,3 +1736,18 @@ function areTrue(a, b) {
 function equalSlices(total, people, each) {
     return people * each <= total;
 }
+
+
+
+//Squares and Cubes
+//Create a function that takes an array of two numbers and
+// checks if the square root of the first number is equal
+// to the cube root of the second number.
+
+//EXAMPLES
+//heckSquareAndCube([4, 8]) ➞ true
+// checkSquareAndCube([16, 48]) ➞ false
+// checkSquareAndCube([9, 27]) ➞ true
+function checkSquareAndCube(arr) {
+    return Math.sqrt(arr[0]) === Math.cbrt(arr[1]);
+}
