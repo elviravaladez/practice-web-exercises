@@ -1751,3 +1751,16 @@ function equalSlices(total, people, each) {
 function checkSquareAndCube(arr) {
     return Math.sqrt(arr[0]) === Math.cbrt(arr[1]);
 }
+
+//Concatenating First and Last Character of a String
+//Creates a function that takes a string and returns the
+// concatenated first and last character.
+//EXAMPLES
+//firstLast("ganesh") ➞ "gh"
+// firstLast("kali") ➞ "ki"
+// firstLast("shiva") ➞ "sa"
+// firstLast("vishnu") ➞ "vu"
+// firstLast("durga") ➞ "da"
+function firstLast(name) {
+    return name.charAt(0) + name.charAt(name.length - 1);
+}
