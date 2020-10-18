@@ -1764,3 +1764,23 @@ function checkSquareAndCube(arr) {
 function firstLast(name) {
     return name.charAt(0) + name.charAt(name.length - 1);
 }
+
+
+//Count the Syllables
+//Create a function that returns the number of syllables in a
+// simple string. The string is made up of short repeated words
+// like "Lalalalalalala" (which would have 7 syllables).
+
+//For simplicity, please note that each syllable will consist
+// of two letters only.
+
+//EXAMPLES
+//countSyllables("Hehehehehehe") ➞ 6
+// countSyllables("bobobobobobobobo") ➞ 8
+// countSyllables("NANANA") ➞ 3
+
+function countSyllables(str) {
+    var vowels = /[aeiou]/gi;
+    var vowelMatch = str.match(vowels);
+    return vowelMatch.length;
+}
