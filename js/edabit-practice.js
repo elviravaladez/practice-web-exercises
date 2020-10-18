@@ -1372,3 +1372,13 @@ function squaresSum(n) {
     }
     return total;
 }
+
+
+//refactored squareSum function
+function squaresSum(n) {
+    var total=0;
+    for(var i = 1;i <= n;i++) {
+        total += Math.pow(i,2);
+    }
+    return total;
+}
