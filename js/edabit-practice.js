@@ -1919,3 +1919,17 @@ function format(a, b, c) {
 function match(s1, s2) {
     return s1.toLowerCase() === s2.toLowerCase();
 }
+
+
+
+
+//Fraction Greater Than One
+//Given a fraction as a string, return whether or not it is greater than 1 when evaluated.
+//EXAMPLES
+//greaterThanOne("1/2") ➞ false
+// greaterThanOne("7/4") ➞ true
+// greaterThanOne("10/10") ➞ false
+//Fractions must be strictly greater than 1 (see example #3).
+function greaterThanOne(frac) {
+    return eval(frac) > 1;
+}
