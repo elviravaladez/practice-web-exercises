@@ -1987,3 +1987,20 @@ function isAnagram(str1, str2) {
 
     return charArr1 === charArr2;
 }
+
+
+//Array of Word Lengths
+//Create a function that takes an array of words
+// and transforms it into an array of each word's length.
+
+//EXAMPLES
+//wordLengths(["hello", "world"]) ➞ [5, 5]
+// wordLengths(["Halloween", "Thanksgiving", "Christmas"]) ➞ [9, 12, 9]
+// wordLengths(["She", "sells", "seashells", "down", "by", "the", "seashore"]) ➞ [3, 5, 9, 4, 2, 3, 8]
+function wordLengths(arr) {
+    var newArr = [];
+    for(var char = 0; char < arr.length; char++) {
+        newArr.push(arr[char].length);
+    }
+    return newArr;
+}
