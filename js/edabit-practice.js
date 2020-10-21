@@ -1975,3 +1975,18 @@ function incrementItems(arr) {
     }
     return arr;
 }
+
+
+
+
+
+function isAnagram(str1, str2) {
+    if(str1.length !== str2.length) {
+        return false;
+    }
+
+    var charArr1 = str1.split("").sort().join("");
+    var charArr2 = str2.split("").sort().join("");
+
+    return charArr1 === charArr2;
+}
