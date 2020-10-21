@@ -2004,3 +2004,64 @@ function wordLengths(arr) {
     }
     return newArr;
 }
+
+
+
+//Shapes With N Sides
+//Create a function that takes a whole number as input and
+// returns the shape with that number's amount of sides. Here
+// are the expected outputs to get from these inputs.
+//
+//EXAMPLES
+// Inputs	Outputs
+// 1	"circle"
+// 2	"semi-circle"
+// 3	"triangle"
+// 4	"square"
+// 5	"pentagon"
+// 6	"hexagon"
+// 7	"heptagon"
+// 8	"octagon"
+// 9	"nonagon"
+// 10	"decagon"
+
+//nSidedShape(3) ➞ "triangle"
+// nSidedShape(1) ➞ "circle"
+// nSidedShape(9) ➞ "nonagon"
+function nSidedShape(n) {
+    switch (n) {
+        case 1:
+            return "circle";
+            break;
+        case 2:
+            return "semi-circle";
+            break;
+        case 3:
+            return "triangle";
+            break;
+        case 4:
+            return "square";
+            break;
+        case 5:
+            return "pentagon";
+            break;
+        case 6:
+            return "hexagon";
+            break;
+        case 7:
+            return "heptagon";
+            break;
+        case 8:
+            return "octagon";
+            break;
+        case 9:
+            return "nonagon";
+            break;
+        case 10:
+            return "decagon";
+            break;
+        default:
+            return "Not a shape on our list. Try again.";
+            break;
+    }
+}
