@@ -2099,3 +2099,16 @@ function ctoa(c) {
     var index = 0;
     return c.charCodeAt(index);
 }
+
+
+//Convert Number to String of Dashes
+//Create a function that takes a number (from 1 - 60)
+// and returns a corresponding string of hyphens.
+
+//EXAMPLES
+//Go(1) ➞ "-"
+// Go(5) ➞ "-----"
+// Go(3) ➞ "---"
+function Go(num) {
+    return "-".repeat(num);
+}
