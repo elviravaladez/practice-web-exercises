@@ -2084,3 +2084,18 @@ function nSidedShape(n) {
     }
     return shapes[n];
 }
+
+
+
+//Char-to-ASCII
+//Create a function that returns the ASCII value of the passed in character.
+
+//EXAMPLES
+//ctoa("A") ➞ 65
+// ctoa("m") ➞ 109
+// ctoa("[") ➞ 91
+// ctoa("\") ➞ 92
+function ctoa(c) {
+    var index = 0;
+    return c.charCodeAt(index);
+}
