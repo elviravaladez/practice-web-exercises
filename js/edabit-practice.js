@@ -2247,3 +2247,8 @@ function createID(firstname, lastname) {
     var lastTwoLetters = lastname.slice(1, 3).toLowerCase();
     return firstInitial + lastInitialCap + lastTwoLetters;
 }
+
+//Refactored
+function createID(firstname, lastname) {
+    return firstname[0].toLowerCase() + lastname[0].toUpperCase() + lastname[1].toLowerCase() + lastname[2].toLowerCase();
+}
