@@ -741,3 +741,13 @@ function toArray(value1, value2) {
     arr.push(value2);
     return arr;
 }
+
+
+
+//Write a function getFirstElement that takes an array and returns the first element of the array.
+//
+// Example: getFirstElement([1, 2]) should return 1.
+
+function getFirstElement(arr) {
+    return arr.shift();
+}
