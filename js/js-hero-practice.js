@@ -824,3 +824,8 @@ function concatUp(a1, a2) {
     }
     return a1.concat(a2);
 }
+
+
+
+
+/****** Array: slice() *******/
