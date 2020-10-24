@@ -730,3 +730,14 @@ function addWithSurcharge(pOne, pTwo) {
         return pOne + pTwo + 2 + 3;
     }
 }
+
+
+//Write a function toArray that takes 2 values and returns these values in an array.
+//
+// Example: toArray(5, 9) should return the array [5, 9].
+function toArray(value1, value2) {
+    var arr = [];
+    arr.push(value1);
+    arr.push(value2);
+    return arr;
+}
