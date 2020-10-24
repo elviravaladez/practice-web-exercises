@@ -764,3 +764,12 @@ function setFirstElement(arr, num) {
     arr.unshift(num);
     return arr;
 }
+
+
+//Write a function getLastElement that takes an array
+// and returns the last element of the array.
+//
+// Example: getLastElement([1, 2]) should return 2.
+function getLastElement(arr) {
+    return arr.pop();
+}
