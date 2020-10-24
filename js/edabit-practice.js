@@ -2406,3 +2406,20 @@ function kToK(n, k) {
 function add(char, str) {
     return str.split(' ').join(char);
 }
+
+
+//String or Integer?
+//Create a function that checks if the argument is an
+// integer or a string. Return int if it's an integer
+// and str if it's a string.
+//EXAMPLES
+// intOrString(8) ➞ "int"
+// intOrString("Hello") ➞ "str"
+// intOrString(9843532) ➞ "int"
+function intOrString(param) {
+    if(typeof param === "number") {
+        return "int";
+    } else if(typeof param === "string") {
+        return "str";
+    }
+}
