@@ -668,3 +668,18 @@ function equals(value1, value2) {
     }
     return "UNEQUAL";
 }
+
+
+//Write a function repdigit that determines whether a two-digit decimal
+// is a repdigit or not. If the decimal is a repdigit, 'Repdigit!'
+// should be returned, otherwise 'No Repdigit!'.
+//
+// Example: repdigit(22) should return 'Repdigit!' and repdigit(23) should return 'No Repdigit!'.
+function repdigit(dec) {
+    let ones = dec % 10;
+    let tens = Math.floor(dec / 10);
+    if (ones === tens) {
+        return "Repdigit!";
+    }
+    return "No Repdigit!";
+}
