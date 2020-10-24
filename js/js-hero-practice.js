@@ -683,3 +683,21 @@ function repdigit(dec) {
     }
     return "No Repdigit!";
 }
+
+//Write a function addWithSurcharge that adds two amounts with surcharge.
+// For each amount less than or equal to 10, the surcharge is 1.
+// For each amount greater than 10, the surcharge is 2.
+//
+// Example: addWithSurcharge(5, 15) should return 23.
+
+function addWithSurcharge(amount1, amount2) {
+    if(amount1 <= 10 && amount2 <= 10) {
+        return ((amount1 + 1) + (amount2 + 1));
+    } else if(amount1 > 10 && amount2 > 10) {
+        return ((amount1 + 2) + (amount2 + 2));
+    } else if(amount1 <= 10 && amount2 > 10) {
+        return ((amount1 + 1) + (amount2 + 2));
+    } else if(amount1 > 10 && amount2 <= 10) {
+        return ((amount1 + 2) + (amount2 + 1));
+    }
+}
