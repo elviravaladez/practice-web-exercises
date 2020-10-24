@@ -810,3 +810,17 @@ function add(arr, num) {
     }
     return arr;
 }
+
+
+//Write a function concatUp that concatenate two arrays.
+// The longer array should be appended to the shorter array.
+// If both arrays are equally long, the second array should
+// be appended to the first array.
+//
+// Example: concatUp([1, 2], [3]) should return [3, 1, 2] and concatUp([5, 7], [6, 8]) should return [5, 7, 6, 8].
+function concatUp(a1, a2) {
+    if(a1.length > a2.length) {
+        return a2.concat(a1);
+    }
+    return a1.concat(a2);
+}
