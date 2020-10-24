@@ -784,3 +784,16 @@ function getLastElement(arr) {
 function sort(arr) {
     return arr.sort()
 }
+
+
+//Write a function rotate that rotates the elements of
+// an array. All elements should be moved one position
+// to the left. The 0th element should be placed at the
+// end of the array. The rotated array should be returned.
+//
+// Example: rotate(['a', 'b', 'c']) should return ['b', 'c', 'a'].
+function rotate(arr) {
+    var a = arr.shift();
+    arr.push(a);
+    return arr;
+}
