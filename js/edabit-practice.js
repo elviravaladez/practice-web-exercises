@@ -2381,3 +2381,16 @@ function toInt(str) {
 function toStr(int) {
     return int.toString();
 }
+
+//Testing K^K == N?
+//Write a function that returns true if k^k == n
+// for input (n, k) and return false otherwise.
+//EXAMPLES:
+//kToK(4, 2) ➞ true
+// kToK(387420489, 9) ➞ true
+// // 9^9 == 387420489
+// kToK(3124, 5) ➞ false
+// kToK(17, 3) ➞ false
+function kToK(n, k) {
+    return n == Math.pow(k, k);
+}
