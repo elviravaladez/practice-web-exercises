@@ -2394,3 +2394,15 @@ function toStr(int) {
 function kToK(n, k) {
     return n == Math.pow(k, k);
 }
+
+
+//WordCharWord
+//Create a function that will put the first argument,
+// a character, between every word in the second argument, a string.
+//EXAMPLES
+//add("R", "python is fun") ➞ "pythonRisRfun"
+// add("#", "hello world!") ➞ "hello#world!"
+// add("#", " ") ➞ "#"
+function add(char, str) {
+    return str.split(' ').join(char);
+}
