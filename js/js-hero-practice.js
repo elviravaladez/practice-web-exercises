@@ -655,3 +655,16 @@ function unequal(value1, value2, value3) {
 function isThreeDigit(num) {
     return num >= 100 && num < 1000;
 }
+
+
+//Write a function equals that checks two values for strict equality.
+// If the two values are equal, the string 'EQUAL' should be returned.
+// If they are unequal, you should get 'UNEQUAL'.
+//
+// Example: equals(1, 1) should return 'EQUAL' and equals(1, 2) should return 'UNEQUAL'.
+function equals(value1, value2) {
+    if(value1 === value2) {
+        return "EQUAL";
+    }
+    return "UNEQUAL";
+}
