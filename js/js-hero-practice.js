@@ -701,3 +701,32 @@ function addWithSurcharge(amount1, amount2) {
         return ((amount1 + 2) + (amount2 + 1));
     }
 }
+
+//Write a function addWithSurcharge that adds two amounts
+// with surcharge. For each amount less than or equal
+// to 10, the surcharge is 1. For each amount greater than
+// 10 and less than or equal to 20, the surcharge is 2.
+// For each amount greater than 20, the surcharge is 3.
+//
+// Example: addWithSurcharge(10, 30) should return 44.
+
+
+function addWithSurcharge(pOne, pTwo) {
+    if(pOne <= 10 && pTwo <= 10) {
+        return pOne + pTwo + 2;
+    } else if((pOne > 10 && pOne <= 20) && (pTwo > 10 && pTwo <= 20)) {
+        return pOne + pTwo + 4;
+    } else if((pOne > 20) && (pTwo > 20)) {
+        return pOne + pTwo + 6;
+    } else if(pOne <= 10 && (pTwo > 10 && pTwo <= 20)) {
+        return pOne + pTwo + 1 + 2;
+    } else if(pTwo <= 10 && (pOne > 10 && pOne <= 20)) {
+        return pOne + pTwo + 1 + 2;
+    } else if((pOne <= 10 && pTwo > 20) ||(pTwo <= 10 && pOne > 20)) {
+        return pOne + pTwo + 1 + 3;
+    } else if((pOne > 10 && pOne <= 20) && (pTwo > 20)) {
+        return pOne + pTwo + 2 + 3;
+    } else if((pTwo > 10 && pTwo <= 20)&& (pOne > 20)) {
+        return pOne + pTwo + 2 + 3;
+    }
+}
