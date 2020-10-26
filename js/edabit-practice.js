@@ -2490,3 +2490,15 @@ function spaceMeOut(str) {
 function volPizza(radius, height) {
     return Math.round(Math.pow(radius, 2) * height * Math.PI);
 }
+
+
+//How Many Vowels?
+//Create a function that takes a string and returns the number (count) of vowels contained within it.
+//countVowels("Celebration") ➞ 5
+// countVowels("Palm") ➞ 1
+// countVowels("Prediction") ➞ 4
+function countVowels(str) {
+    var vowels = /[aeiou]/gi;
+    var vowelMatch = str.match(vowels);
+    return vowelMatch.length;
+}
