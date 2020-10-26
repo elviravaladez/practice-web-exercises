@@ -2502,3 +2502,8 @@ function countVowels(str) {
     var vowelMatch = str.match(vowels);
     return vowelMatch.length;
 }
+
+//Refactored countVowels function
+function countVowels(str) {
+    return str.match(/[aeiou]/g).length;
+}
