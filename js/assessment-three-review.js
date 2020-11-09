@@ -7,11 +7,11 @@ function isNegative(num) {
 }
 
 
-// console.log(isNegative(42)) //expect false
-// console.log(isNegative(-38.4)) //expect true
-// console.log(isNegative("2.22")) // expect false
-// console.log(isNegative("-53")) // expect true
-// console.log(isNegative("-.23")) // expect true
+console.log(isNegative(42)) //expect false
+console.log(isNegative(-38.4)) //expect true
+console.log(isNegative("2.22")) // expect false
+console.log(isNegative("-53")) // expect true
+console.log(isNegative("-.23")) // expect true
 
 
 // Write a function called portmanteau that accepts an array of strings
@@ -22,14 +22,16 @@ function isNegative(num) {
 
 //1 parameter but it's an array so there's going to be a lot stuff
 function portmanteau(arr) {
-    return arr.join("" );
+    var newArr = [];
+    newArr.push(arr.join("" ));
+    return newArr;
 }
 
 
 
-// console.log(portmanteau(["Row", "row", "fight", "the", "power"]))
-// console.log(portmanteau(["Hello", "world"]))
-// console.log(portmanteau(["one", "two", "three", "four"]))
+console.log(portmanteau(["Row", "row", "fight", "the", "power"]))
+console.log(portmanteau(["Hello", "world"]))
+console.log(portmanteau(["one", "two", "three", "four"]))
 
 
 // Write a function called noRoberts that accepts an array of strings and
@@ -68,10 +70,10 @@ function noRoberts(arrayOfNames) {
 }
 
 
-// console.log(noRoberts(["Jim", "Bob", "Martha", "Robert", "Lucille"]));
-// console.log(noRoberts(["Hank", "bob", "Robby", "Gertrude", "larry"]));
-// console.log(noRoberts(["rob", "sally", "Susan", "Roberto", "roger"]));
-// console.log(noRoberts(["Joebob", "roBert", "samantha", "Niel", "rboert"]));
+console.log(noRoberts(["Jim", "Bob", "Martha", "Robert", "Lucille"]));
+console.log(noRoberts(["Hank", "bob", "Robby", "Gertrude", "larry"]));
+console.log(noRoberts(["rob", "sally", "Susan", "Roberto", "roger"]));
+console.log(noRoberts(["Joebob", "roBert", "samantha", "Niel", "rboert"]));
 
 
 
@@ -93,9 +95,9 @@ function rectangleConstructor(heightValue, widthValue, rectangleColorValue){
 }
 
 
-// makeRectangle(rectangleConstructor(4, 8, "green"));
-// makeRectangle(rectangleConstructor(10, 10, "orange"));
-// makeRectangle(rectangleConstructor(20, 5, "pink"));
+makeRectangle(rectangleConstructor(4, 8, "green"));
+makeRectangle(rectangleConstructor(10, 10, "orange"));
+makeRectangle(rectangleConstructor(20, 5, "pink"));
 
 
 
@@ -108,28 +110,28 @@ function rectangleConstructor(heightValue, widthValue, rectangleColorValue){
 //Want to return one object based on largest area  --> height * width
 //keep track of what has greatest area and return the object with the largest area
 
-function findLargest(arrayOfRectangles) {
-    var areaWinner = 0;
-    var largestArea = 0;
-
-    //Need to loop through all objects
-    arrayOfRectangles.forEach(function(rectangle) {
-        //Check the rectangle I'm currently on to see if it's area is larger than the largest area
-        //I've found so far
-        //If so then I update the largest area and largest rectangle
-       if(rectangle.height * rectangle.width > largestArea){
-           areaWinner = rectangle;
-           largestArea = rectangle.height * rectangle.width;
-       }
-    });
-
-    return areaWinner;
-}
+// function findLargest(arrayOfRectangles) {
+//     var areaWinner = 0;
+//     var largestArea = 0;
+//
+//     //Need to loop through all objects
+//     arrayOfRectangles.forEach(function(rectangle) {
+//         //Check the rectangle I'm currently on to see if it's area is larger than the largest area
+//         //I've found so far
+//         //If so then I update the largest area and largest rectangle
+//        if(rectangle.height * rectangle.width > largestArea){
+//            areaWinner = rectangle;
+//            largestArea = rectangle.height * rectangle.width;
+//        }
+//     });
+//
+//     return areaWinner;
+// }
 
 // var rectanglesOne = [{height: 3, width: 7, color: "blue"}, {height: 13, width: 4, color: "pink"}, {height: 40, width: 18, color: "purple"}]
 // var rectanglesTwo = [{height: 10, width: 10, color: "yellow"}, {height: 88, width: 7, color: "red"}, {height: 5, width: 6, color: "green"}]
-// console.log(findLargest(rectanglesOne))
-// console.log(findLargest(rectanglesTwo))
+// console.log(findLargest(rectanglesOne));
+// console.log(findLargest(rectanglesTwo));
 
 
 // Write a function called orderDigits that accepts a number
