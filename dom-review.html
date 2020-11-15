@@ -27,5 +27,24 @@
         <button id="highlight">Highlight</button>
     </div>
 </div>
+<script>
+    "use strict";
+    (function() {
+
+        // Allow the user to type in their favorite food into the input and append it
+        //to the list once the button is clicked.
+        var addFoodToList = function (event) {
+            var foodInput = document.getElementById("input").value;
+
+            var ul = document.getElementById("favorite-food");
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode(foodInput));
+            ul.appendChild(li);
+        }
+
+        document.getElementById("add-to-list").addEventListener("click", addFoodToList);
+
+    })();
+</script>
 </body>
 </html>
