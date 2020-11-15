@@ -39,6 +39,7 @@
             li.appendChild(document.createTextNode(foodInput));
             ul.appendChild(li);
         };
+
         document.getElementById("add-to-list").addEventListener("click", addFoodToList);
 
 
@@ -48,6 +49,7 @@
             var header = document.getElementById("change-me");
             header.style["background-color"] = "purple";
         };
+
         document.querySelector("#change-me").addEventListener("dblclick", changeHeader);
 
 
@@ -58,17 +60,29 @@
             var cohortSpan = document.querySelector("#my-cohort");
             cohortSpan.innerText = cohortNameInput;
         };
+
         document.querySelector("#change-cohort").addEventListener("click", addCohortName);
 
 
 
-        //When 'Highlight' button is clicked, change the background color of the
-        // cohort name to yellow.
+        //When 'Highlight' button is clicked, change the background color of the cohort name to yellow.
         var highlightCohortName = function() {
             var cohortSpan = document.querySelector("#my-cohort");
             cohortSpan.style.backgroundColor = "yellow";
         };
+
         document.querySelector("#highlight").addEventListener("click", highlightCohortName);
+
+
+
+        //Write some JavaScript that changes the background-color of the container to pink after 3 seconds.
+        var delay = 3000;
+
+        var timeoutId = setTimeout(function(){
+            var container = document.querySelector(".container");
+            container.style["background-color"] = "pink";
+        }, delay);
+
     })();
 </script>
 </body>
