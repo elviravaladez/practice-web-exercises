@@ -30,9 +30,7 @@
 <script>
     "use strict";
     (function() {
-
-        // Allow the user to type in their favorite food into the input and append it
-        //to the list once the button is clicked.
+        // Allow the user to type in their favorite food into the input and append it to the list once the button is clicked.
         var addFoodToList = function(event) {
             var foodInput = document.getElementById("input").value;
 
@@ -43,8 +41,9 @@
         }
         document.getElementById("add-to-list").addEventListener("click", addFoodToList);
 
-        //When the heading 'Change Me' is double clicked, change its
-        //background-color to purple.
+
+
+        //When the heading 'Change Me' is double clicked, change its background-color to purple.
         var changeHeader = function(event) {
             var header = document.getElementById("change-me");
             header.style["background-color"] = "purple";
@@ -52,6 +51,15 @@
         document.querySelector("#change-me").addEventListener("dblclick", changeHeader);
 
 
+
+        //Allow the user to input their cohort name. Once Update button is clicked, the text should update with the name of the cohort.
+        var addCohortName = function(event) {
+            var cohortNameInput = document.getElementById("cohort-name").value;
+
+            var cohortSpan = document.querySelector("#my-cohort");
+            cohortSpan.innerText = cohortNameInput;
+        }
+        document.querySelector("#change-cohort").addEventListener("click", addCohortName);
     })();
 </script>
 </body>
