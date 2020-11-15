@@ -33,7 +33,7 @@
 
         // Allow the user to type in their favorite food into the input and append it
         //to the list once the button is clicked.
-        var addFoodToList = function (event) {
+        var addFoodToList = function(event) {
             var foodInput = document.getElementById("input").value;
 
             var ul = document.getElementById("favorite-food");
@@ -41,8 +41,16 @@
             li.appendChild(document.createTextNode(foodInput));
             ul.appendChild(li);
         }
-
         document.getElementById("add-to-list").addEventListener("click", addFoodToList);
+
+        //When the heading 'Change Me' is double clicked, change its
+        //background-color to purple.
+        var changeHeader = function(event) {
+            var header = document.getElementById("change-me");
+            header.style["background-color"] = "purple";
+        }
+        document.querySelector("#change-me").addEventListener("click", changeHeader);
+
 
     })();
 </script>
