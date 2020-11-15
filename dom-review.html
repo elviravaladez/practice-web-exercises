@@ -31,35 +31,44 @@
     "use strict";
     (function() {
         // Allow the user to type in their favorite food into the input and append it to the list once the button is clicked.
-        var addFoodToList = function(event) {
+        var addFoodToList = function() {
             var foodInput = document.getElementById("input").value;
-
             var ul = document.getElementById("favorite-food");
             var li = document.createElement("li");
+
             li.appendChild(document.createTextNode(foodInput));
             ul.appendChild(li);
-        }
+        };
         document.getElementById("add-to-list").addEventListener("click", addFoodToList);
 
 
 
         //When the heading 'Change Me' is double clicked, change its background-color to purple.
-        var changeHeader = function(event) {
+        var changeHeader = function() {
             var header = document.getElementById("change-me");
             header.style["background-color"] = "purple";
-        }
+        };
         document.querySelector("#change-me").addEventListener("dblclick", changeHeader);
 
 
 
         //Allow the user to input their cohort name. Once Update button is clicked, the text should update with the name of the cohort.
-        var addCohortName = function(event) {
+        var addCohortName = function() {
             var cohortNameInput = document.getElementById("cohort-name").value;
-
             var cohortSpan = document.querySelector("#my-cohort");
             cohortSpan.innerText = cohortNameInput;
-        }
+        };
         document.querySelector("#change-cohort").addEventListener("click", addCohortName);
+
+
+
+        //When 'Highlight' button is clicked, change the background color of the
+        // cohort name to yellow.
+        var highlightCohortName = function() {
+            var cohortSpan = document.querySelector("#my-cohort");
+            cohortSpan.style.backgroundColor = "yellow";
+        };
+        document.querySelector("#highlight").addEventListener("click", highlightCohortName);
     })();
 </script>
 </body>
