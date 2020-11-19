@@ -61,6 +61,24 @@
             $(this).css('background-color', 'purple');
         });
 
+
+        //Exercise 3: Allow the user to input their cohort name. Once Update button is clicked,
+        //the text should should update with the name of the cohort.
+        $('#change-cohort').click(function(){
+            //access the input via jQuery
+            var cohortNameInput = $('#cohort-name');
+
+            //grab the value of the input
+            var cohortNameInputValue = cohortNameInput.val();
+
+            //add value to span with id of my-cohort
+            $('#my-cohort').html(cohortNameInputValue);
+
+            //empty the input search bar
+            cohortNameInput.val("");
+        });
+
+
     });
 </script>
 </body>
