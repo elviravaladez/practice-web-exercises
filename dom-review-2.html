@@ -30,10 +30,29 @@
 
 
 
-<script src="js/jquery.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script>
     $(document).ready(function() {
         "use strict";
+        //Exercise 1: Allow the user to type in their favorite food into the input and append it
+        //to the list once the button is clicked.
+        $('#add-to-list').click(function(e) {
+
+            //access the input via jQuery
+            var foodInput = $('#input');
+
+            //grab the value of the input
+            var foodInputValue = foodInput.val();
+
+            //set up the value to add as an li element
+            var newFoodItem = "<li>" + foodInputValue + "</li>";
+
+            //add value to ul
+            $('#favorite-food').append(newFoodItem);
+
+            //empty the input search bar (to display no text within the search bar once the button is clicked)
+            foodInput.val("");
+        });
 
     });
 </script>
