@@ -2587,3 +2587,19 @@ var [,,lips,] = arr;
 // Change the string so that it will evaluate to head = 1 and tail = [2, 3, 4]
 // Use the Rest element
 const str = '[head, ...tail] = [1, 2, 3, 4]'
+
+
+
+//The Study of Wumbology
+//Create a function that flips M's to W's (all uppercase).
+
+//EXAMPLES:
+//wumbo("I LOVE MAKING CHALLENGES") ➞ "I LOVE WAKING CHALLENGES"
+//
+// wumbo("MEET ME IN WARSAW") ➞ "WEET WE IN WARSAW"
+//
+// wumbo("WUMBOLOGY") ➞ "WUWBOLOGY"
+function wumbo(words) {
+    const M = /M/gi;
+    return words.toUpperCase().replace(M, "W");
+}
