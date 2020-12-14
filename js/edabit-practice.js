@@ -2630,3 +2630,8 @@ function area(h, w) {
         return h*w;
     }
 }
+
+//Buggy Code(Part 2)
+function maxNum(n1, n2) {
+    return Math.max(n1, n2);
+}
