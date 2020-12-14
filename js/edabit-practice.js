@@ -2616,3 +2616,8 @@ function wumbo(words) {
 function valueAt(arr, i) {
     return arr[Math.floor(i)];
 }
+
+//Is it Time for Milk and Cookies?
+function timeForMilkAndCookies(date) {
+     return (date.getMonth() === 11) && (date.getDate() === 24);
+}
