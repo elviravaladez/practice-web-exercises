@@ -2621,3 +2621,12 @@ function valueAt(arr, i) {
 function timeForMilkAndCookies(date) {
      return (date.getMonth() === 11) && (date.getDate() === 24);
 }
+
+//Area of a Rectangle
+function area(h, w) {
+    if( h <= 0 || w <= 0) {
+        return -1;
+    } else {
+        return h*w;
+    }
+}
