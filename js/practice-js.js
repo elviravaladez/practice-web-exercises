@@ -21,3 +21,23 @@ function palindrome(str) {
         return false;
     }
 }
+
+
+
+function sockMerchant(n, ar) {
+    var socksCount = {};
+    var sum = 0;
+
+    for(var num of ar) {
+        if(socksCount[num]) {
+            socksCount[num] += 1;
+        } else {
+            socksCount[num] = 1;
+        }
+
+        if(socksCount[num] % 2 === 0){
+            sum += 1;
+        }
+    }
+    return sum;
+}
