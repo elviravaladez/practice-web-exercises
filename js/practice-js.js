@@ -57,3 +57,17 @@ function disemvowel(str) {
 
     return newStr;
 }
+
+
+function squareDigits(num){
+    var numAsStr = String(num);
+    var newNum = "";
+
+    for(var i = 0; i < numAsStr.length; i++) {
+        var squared = parseFloat(numAsStr[i]) * parseFloat(numAsStr[i]);
+        newNum += String(squared);
+    }
+
+    return parseFloat(newNum);
+
+}
