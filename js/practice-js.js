@@ -91,3 +91,19 @@ const number = function(array){
 
     return myArr;
 }
+
+
+function oddOrEven(array) {
+    //enter code here
+    let count = 0;
+
+    for(num of array) {
+        count += num;
+    }
+
+    if(count % 2 === 0) {
+        return "even";
+    } else {
+        return "odd";
+    }
+}
