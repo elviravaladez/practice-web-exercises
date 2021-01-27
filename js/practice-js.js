@@ -71,3 +71,23 @@ function squareDigits(num){
     return parseFloat(newNum);
 
 }
+
+
+const number = function(array){
+    //your awesome code here
+    let myArr = [];
+    let count = 1;
+
+    if(array === []) {
+        return [];
+    }
+
+    for(let i = 0; i < array.length; i++) {
+        let num = i + 1;
+        let char = array[i]
+
+        myArr.push(num + ": " + char);
+    }
+
+    return myArr;
+}
