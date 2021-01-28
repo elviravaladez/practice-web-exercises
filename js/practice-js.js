@@ -128,7 +128,7 @@ var removeDuplicates = function(nums) {
     return i + 1;
 }
 
-//Time Complexity: O(n)
+//Time Complexity: O(n) LINEAR
 function sum(arr){
     let result = 0; //runs once
     for(const num of arr) { //runs once
@@ -136,3 +136,14 @@ function sum(arr){
     }
     return result; //runs once
 }
+
+//Another Solution: NOT BETTER, Gives O(n) LINEAR time complexity(same)
+function sum2(arr) {
+    return arr.reduce((sum, currNum) => sum + currNum, 0);
+}
+
+//This is not actually a O(1) Time Complexity, even though you would assume that it is
+//B/c you're calling the reduce method, it does a similar method as our for of loop
+
+
+//A function is only O(1) when your line of code DOES NOT call on another function
