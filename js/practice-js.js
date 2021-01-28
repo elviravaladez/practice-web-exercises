@@ -107,3 +107,23 @@ function oddOrEven(array) {
         return "odd";
     }
 }
+
+
+var removeDuplicates = function(nums) {
+
+    //Taking care of edge-case where array is empty
+    if(nums.length === 0) {
+        return 0;
+    }
+
+    let i = 0; //creating i var to use within loop to compare to the next element in arr
+
+    for(let j = 1; j < nums.length; j++) {
+        if(nums[j] !== nums[i]) {
+            i++;
+            nums[i] = nums[j];
+        }
+    }
+
+    return i + 1;
+}
