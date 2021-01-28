@@ -130,9 +130,9 @@ var removeDuplicates = function(nums) {
 
 //Time Complexity: O(n)
 function sum(arr){
-    let result = 0;
-    for(const num of arr) {
-        result += num;
+    let result = 0; //runs once
+    for(const num of arr) { //runs once
+        result += num; //runs n times
     }
-    return result;
+    return result; //runs once
 }
