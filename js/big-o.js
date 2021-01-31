@@ -43,4 +43,27 @@
 
         return count;
     }
+
+
+    //Code computes the square root of a number. If the number is NOT a perfect square, then it returns -1. It does this by successively guessing.
+    //TIME COMPLEXITY: 0(log n) -> The algorithm is essentially doing a binary search to find the square root. Therefore, the runtime is O(log n)
+    function sqrt(num) {
+        return sqrtHelper(num, 1, num);
+    }
+
+    function sqrtHelper(num, min, max) {
+        if(max < min) {
+            return -1; //no square root
+        }
+
+        let guess = (min + max) / 2;
+
+        if(guess * guess === num) {
+            return guess;
+        } else if(guess * guess < num) { //too low
+            return sqrtHelper(num, guess + 1, max); //try higher
+        } else { //too high
+            return sqrtHelper(num, min, guess - 1); //try lower
+        }
+    }
 })();
