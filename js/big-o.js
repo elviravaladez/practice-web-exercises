@@ -1,5 +1,7 @@
 "use strict";
 (function(){
+    //Big O Practice with Time Complexity
+
     //O(N)
     function product(a, b){
         let sum = 0;
@@ -85,4 +87,42 @@
     //VI.8
     //You are looking for a specific value in a binary tree, but the tree is NOT a binary search tree. What is the time complexity of this?
     //O(n) -> Without any ordering property on the nodes, we might have to search through all the nodes.
+
+
+    //VI.9
+    //The appendToNew Method appends a value to an array by creating a new, longer array and returning this longer array. You've used the appendToNew method to create a copyArray function that repeatedly calls appendToNew. How long does copying an array take?
+    //O(n^2) -> where n is the number of elements in the array. The first call to appendToNew takes 1 copy. The second call takes 2 copies. The 3rd call takes 3 copies. And so on. The total time will be the sum of 1 through n, which is O(n^2);
+    function copyArray(arr) {
+        let copy = [];
+        for(let value of arr) {
+            copy = appendToNew(copy, value);
+        }
+        return copy;
+    }
+
+    function appendToNew(arr, value) {
+        //copy all elements over to new array
+        let bigger = [];
+        for(let i = 0; i < arr.length; i++) {
+            bigger[i] = arr[i];
+        }
+        //add new element
+        bigger[bigger.length - 1] = value;
+        return bigger;
+    }
+
+
+    //The code below sums the digits in a number.
+    //Time complexity: O(log n) -> The runtime will be the number of digits in the number. A number with d digits can have a value up to 10^d.
+    //If n = 10^d, d = log n. Therefore, the runtime is O(log n)
+    function sumDigits(n) {
+        let sum = 0;
+
+        while(n > 0) {
+            sum += n % 10;
+            n /= 10;
+        }
+
+        return sum;
+    }
 })();
