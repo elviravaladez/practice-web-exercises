@@ -164,3 +164,16 @@ function findNb(m) {
         return -1;
     }
 }
+
+
+//The Supermarket Queue
+function queueTime(customers, n) {
+    let waitTime = new Array(n).fill(0);
+
+    for (let customerTime of customers) {
+        let i = waitTime.indexOf(Math.min(...waitTime));
+        waitTime[i] += customerTime;
+    }
+
+    return Math.max(...waitTime);
+}
