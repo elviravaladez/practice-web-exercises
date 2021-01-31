@@ -30,4 +30,17 @@
         let div = a / b;
         return a - div * b;
     }
+
+    //0(a/b) -> The variable 'count' will eventually equal a/b. The while loop iterates count times. Therefore, it iterates a/b times.
+    function div(a, b) {
+        let count = 0;
+        let sum = b;
+
+        while(sum <= a) {
+            sum += b;
+            count++;
+        }
+
+        return count;
+    }
 })();
