@@ -65,4 +65,17 @@
             return sqrtHelper(num, min, guess - 1); //try lower
         }
     }
+
+    //Code computes the square root of a number. If the number is NOT a perfect square, then it returns -1. It does this by trying increasingly large numbers until it finds the right value(or is too high).
+    //RUNTIME COMPLEXITY: O(squareRt(n) -> Is straight forward loop that stops when guess * guess > n (or, in other words, when guess > squareRt(n)
+    function squareRt(n) {
+        for(let guess = 1; guess <= n; guess++) {
+            if(guess * guess === n) {
+                return guess;
+            }
+        }
+        return -1;
+    }
+
+
 })();
