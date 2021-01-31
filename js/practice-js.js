@@ -165,7 +165,6 @@ function findNb(m) {
     }
 }
 
-
 //The Supermarket Queue
 function queueTime(customers, n) {
     let waitTime = new Array(n).fill(0);  //Initially waitTime is an array filled with 0s
@@ -176,4 +175,19 @@ function queueTime(customers, n) {
     }
 
     return Math.max(...waitTime);
+}
+
+//Sum of the first nth term of Series
+function SeriesSum(n) {
+    let result = 0;
+    let reverage = 1;
+    for (let i = 0; i < n; i++) {
+        if (i === 0) {
+            result = 1;
+        } else {
+            reverage += 3;
+            result = result + (1 / reverage);
+        }
+    }
+    return result.toFixed(2);
 }
