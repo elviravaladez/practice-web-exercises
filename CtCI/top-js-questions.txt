@@ -1,0 +1,73 @@
+TOP INTERVIEW QUESTIONS
+
+----------
+JAVASCRIPT
+----------
+
+1. What is JavaScript?
+    -A high level, interpreted SCRIPTING language that can be executed within
+        the web browser.
+
+2. Data Types:
+    -Number
+    -String
+    -Boolean
+    -Object
+    -Undefined
+
+3. What are JS promises?
+    -A tool for handling asynchronous events
+    -An object that may produce a single value some time in the future, either
+        a resolved value, or a reason that it's not resolved.
+
+4. What are the 3 states of a promise?
+    1)Fulfilled: event happened successfully :)
+    2)Rejected: event happened and an error condition occurred
+    3)Pending: event not yet happened
+
+5. Why are promises useful?
+    -They let you return a value from an asynchronous operation
+    -A promise will start doing whatever task you give it as soon as the promise constructor is invoked
+    -Allows for chaining
+
+6. What is promise chaining?
+    -use the "then()" function. It returns a NEW PROMISE, which you can then treat like a promise and chain another then() onto it
+    -B/c the return value from a promise's callback can itself be treated as a promise, we can chain promises together
+        EXAMPLE:
+            fetch('https://api.github.com/users')
+                .then(response => response.json())
+                .then(users => {
+                    users.forEach( userObj => {
+                        // do something with each username
+                        console.log(userObj.login);
+                    })
+                })
+                .catch(error => console.error(error));
+
+7. How can a JS promise be 'handled'?
+    -With both a success and an error handler
+    .then() //handles successes
+    .catch() //handles rejections and errors
+
+8. What is the Promise.all() method?
+    -The Promise.all() method takes an iterable of promises as an input, and returns a single Promise that resolves to an array of the results of the input promises. This returned promise will resolve when all of the input's promises have resolved, or if the input iterable contains no promises. It rejects immediately upon any of the input promises rejecting or non-promises throwing an error, and will reject with this first rejection message / error.
+
+9. What is the Promise.race() method?
+    -The Promise.race() method returns a promise that fulfills or rejects as soon as one of the promises in an iterable fulfills or rejects, with the value or reason from that promise.
+
+#. Name the differences between Java and JavaScript.
+    -> Java:
+        -An Object Oriented language
+        -Strongly typed language. Variables MUST be declared first to use in a program.
+        -Type of variable is checked at compile-time
+        -Apps can run in any JVM or browser
+        -Objects class based
+        -.java file extension translates source code into bytecode, then executed by JVM (java virtual machine)
+        -Java code interpreted and compiled by converting into bytecode then allowed for usage
+
+    -> JavaScript
+        -A scripting language (object-based)
+        -Weakly typed language. Have more relaxed syntax and rules
+        -Used to run only in browser, can now run on server via Node.js
+        -JS Objects prototype based
+        -JS filed interpreted not compiled
