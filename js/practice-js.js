@@ -147,3 +147,20 @@ function sum2(arr) {
 
 
 //A function is only O(1) when your line of code DOES NOT call on another function
+
+//Build a pile of Cubes
+function findNb(m) {
+    let total = 0
+    let n = 0
+
+    while(total < m) {
+        n += 1;
+        total += Math.pow(n,3);
+    }
+
+    if(total === m) {
+        return n;
+    } else {
+        return -1;
+    }
+}
