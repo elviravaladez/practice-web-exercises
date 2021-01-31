@@ -168,10 +168,10 @@ function findNb(m) {
 
 //The Supermarket Queue
 function queueTime(customers, n) {
-    let waitTime = new Array(n).fill(0);
+    let waitTime = new Array(n).fill(0);  //Initially waitTime is an array filled with 0s
 
     for (let customerTime of customers) {
-        let i = waitTime.indexOf(Math.min(...waitTime));
+        let i = waitTime.indexOf(Math.min(...waitTime)); //The code sets i to the index of the lowest value.
         waitTime[i] += customerTime;
     }
 
