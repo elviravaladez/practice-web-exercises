@@ -1,0 +1,12 @@
+SPACE COMPLEXITY
+
+Space Complexity: How much more memory use (RAM) do we need as the inputs provided to the Code get larger?
+
+-------------------------------
+SPACE COMPLEXITY RULES OF THUMB
+-------------------------------
+-Storing values in variables always takes up memory
+-Most Primitives (booleans, numbers, undefined, null) take up O(1) /Constant Space
+-Strings, Reference Types( Arrays, and Objects) take up O(n) /Linear Space
+
+
