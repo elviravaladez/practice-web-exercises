@@ -44,7 +44,6 @@
         return count;
     }
 
-
     //Code computes the square root of a number. If the number is NOT a perfect square, then it returns -1. It does this by successively guessing.
     //TIME COMPLEXITY: 0(log n) -> The algorithm is essentially doing a binary search to find the square root. Therefore, the runtime is O(log n)
     function sqrt(num) {
