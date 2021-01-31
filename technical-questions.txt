@@ -1,0 +1,77 @@
+Essential MUST-HAVE Knowledge
+---------------
+Data Structures
+---------------
+    -Linked Lists
+    -Trees, Tries & Graphs
+    -Stacks & Queues :)
+    -Heaps
+    -Vectors / ArrayLists :)
+    -Hash Tables (an EXTREMELY IMPORTANT TOPIC)
+
+----------
+Algorithms
+----------
+    -Breadth-First Search
+    -Depth-First Search
+    -Binary Search
+    -Merge Sort
+    -Quick Sort
+
+---------
+Concepts
+---------
+    -Bit Manipulation
+    -Memory (Stack vs. Heap)
+    -Recursion :)
+    -Dynamic Programming :)
+    -Big O Time & Space :)
+
+-----------------
+Powers of 2 Table
+-----------------
+    Is useful for many Qs involving scalability or any sort of memory limitation. Memorizing this table can be useful. Be comfortable deriving it.
+    Page 61
+    If you are doing a phone screen with a web-based company it may be useful to have this table in front of you.
+
+
+-------------------------
+Walking Through a Problem
+-------------------------
+1.LISTEN CAREFULLY
+    -> Be sure you've mentally recorded ANY UNIQUE info. in the problem
+
+2.DRAW AN EXAMPLE
+    -> Specific. Uses real numbers/strings
+    -> Large
+    -> Not a special case
+
+3.STATE A BRUTE FORCE ALGORITHM
+    -> Even if it's terrible, state it
+    -> Describe time and space complexity
+    -> Dive into improvements
+
+4.OPTIMIZE
+    -> Look for any unused info that you might not have considered prior: Interviewer says the array is sorted. How can you use that info to improve the algorithm?
+    -> Use a fresh example
+    -> Use a hash table. Hash tables are widely used in interview questions and should be at the top of your mind. Think about time complexity.
+        -Walk through the brute force w/these ideas in mind and look for
+            Bottlenecks
+            Unnecessary Work
+            Duplicate Work
+
+5.WALK THROUGH
+    -> Take a moment to solidify your understanding of the algorithm.
+    -> Pseudocode
+        -EXAMPLE:
+            1) search array
+            2) Find biggest
+            3) Insert in heap
+            4) if p < q, move q
+
+6.IMPLEMENT
+    -> Write beautiful code.
+        -Modularized code
+            1) Emphasizes separating the functionality of code into independent, interchangeable modules, such that each contains everything necessary to execute only one aspect of the desired functionality
+        -Error Checks
+7.TEST
