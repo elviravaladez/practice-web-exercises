@@ -82,4 +82,7 @@
     // O(n) -> Where n is the number of nodes in the tree. The max to find an element is the depth tree. The tree could be a straight list downwards and have depth n.
 
 
+    //VI.8
+    //You are looking for a specific value in a binary tree, but the tree is NOT a binary search tree. What is the time complexity of this?
+    //O(n) -> Without any ordering property on the nodes, we might have to search through all the nodes.
 })();
