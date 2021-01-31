@@ -10,7 +10,6 @@
         return sum;
     }
 
-
     //O(N) -> The recursive code iterates through N calls, since it subtracts one at each level
     function power(a, b) {
         if(b < 0) {
@@ -22,5 +21,13 @@
         }
     }
 
+    //O(1) -> It does a constant amount of work
+    function mod(a, b) {
+        if(b <= 0) {
+            return -1;
+        }
 
+        let div = a / b;
+        return a - div * b;
+    }
 })();
