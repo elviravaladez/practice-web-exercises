@@ -73,5 +73,25 @@ Walking Through a Problem
     -> Write beautiful code.
         -Modularized code
             1) Emphasizes separating the functionality of code into independent, interchangeable modules, such that each contains everything necessary to execute only one aspect of the desired functionality
-        -Error Checks
+        -Error Checks: If statements
+        -Good variable names
 7.TEST
+    -> Start w/ a conceptual test. Just reading and analyzing what each line of code does.
+        -You're explaining lines of code for code reviewing.
+        -Inspect your code for errors
+            -the i in the for loop, variables, ext.
+        -Double check iterations
+        -Small test cases: A real one to test the code
+        -Test special cases: against null or single element values, etc.
+    -> When you find bugs, fix them. Don't just make the first correction you think of.
+       Instead, analyze WHY the bug occurred and ensure that your fix is the best one.
+
+
+---------------------------
+What Good Coding Looks Like
+---------------------------
+Correct
+Efficient: In time and space. Big O and real life
+Simple: 10 lines instead of 100
+Readable: Has comments where necessary
+Maintainable: Reasonably adaptable to changes
