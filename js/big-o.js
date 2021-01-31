@@ -77,5 +77,8 @@
         return -1;
     }
 
+    //If a binary search tree is not balanced, how long might it take(worst case) to find an element?
+    // O(n) -> Where n is the number of nodes in the tree. The max to find an element is the depth tree. The tree could be a straight list downwards and have depth n.
+
 
 })();
