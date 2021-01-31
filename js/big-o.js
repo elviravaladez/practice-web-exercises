@@ -125,4 +125,17 @@
 
         return sum;
     }
+
+
+    //SPACE COMPLEXITY
+
+    //Space complexity: 0(1)
+    function sum(arr) {
+        let total = 0;  //total variable -> O(1)
+        for(let i = 0; i < arr.length; i++) { // i variable -> O(1)
+            total += arr[i];
+        }
+        return total;
+    }
+
 })();
