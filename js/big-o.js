@@ -138,4 +138,14 @@
         return total;
     }
 
+
+    //Space complexity: 0(N)
+    function double(arr) {
+        let newArr = []; //1 var
+        for(let i = 0; i < arr.length; i++) { //another var 2
+            newArr.push(2 * arr[i]); //newArr grows as we push in numbers -> O(N)
+        }
+        return newArr;
+    }
+
 })();
