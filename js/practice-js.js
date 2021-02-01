@@ -191,3 +191,15 @@ function SeriesSum(n) {
     }
     return result.toFixed(2);
 }
+
+function reverseLetter(str) {
+    let newStringArray = [];
+    let alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+    for(let char of str) {
+        if(alphabet.indexOf(char) !== -1) {
+            newStringArray.unshift(char);
+        }
+    }
+    return newStringArray.join("");
+}
