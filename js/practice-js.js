@@ -203,3 +203,18 @@ function reverseLetter(str) {
     }
     return newStringArray.join("");
 }
+
+function race(v1, v2, g) {
+    let seconds = (g * 3600) / (v2 - v1);
+    let arr = [];
+
+    if(v1 >= v2) {
+        return null;
+    }
+
+    arr.push(parseInt(seconds / 3600));
+    arr.push(parseInt((seconds % 3600) / 60));
+    arr.push(parseInt(seconds % 60));
+
+    return arr;
+}
