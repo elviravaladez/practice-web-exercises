@@ -2635,3 +2635,9 @@ function area(h, w) {
 function maxNum(n1, n2) {
     return Math.max(n1, n2);
 }
+
+
+function lettersOnly(str) {
+	let newStr = str.replace(/[^a-zA-Z]+/g, '');
+	return newStr;
+}
