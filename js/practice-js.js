@@ -218,3 +218,20 @@ function race(v1, v2, g) {
 
     return arr;
 }
+
+
+function jumpingOnClouds(c) {
+    let numberOfJumps = -1;
+    let skippedCloud = null;
+
+    c.forEach((cloud, index) => {
+        if(cloud === 0 && index !== skippedCloud) {
+            numberOfJumps++;
+
+            if(c[index + 1] === 0 && c[index + 2] === 0) {
+                skippedCloud = index + 1;
+            }
+        }
+    });
+    return numberOfJumps;
+}
