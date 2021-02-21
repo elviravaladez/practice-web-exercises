@@ -2641,3 +2641,17 @@ function lettersOnly(str) {
 	let newStr = str.replace(/[^a-zA-Z]+/g, '');
 	return newStr;
 }
+
+
+function reverseCase(str) {
+    let reversedStr = str.split('');
+
+    for(let i = 0; i < reversedStr.length; i++) {
+        if(reversedStr[i] === reversedStr[i].toUpperCase()) {
+            reversedStr[i] = reversedStr[i].toLowerCase();
+        } else {
+            reversedStr[i] = reversedStr[i].toUpperCase();
+        }
+    }
+    return reversedStr.join('');
+}
