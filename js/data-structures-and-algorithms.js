@@ -103,7 +103,6 @@
     validAnagram("qwerty", "qeywrt"); //true
     validAnagram("texttwisttime", "timetwisttext"); //true
 
-
     //Time Complexity: O(N^2)
     function validAnagram(str1, str2){
         if (str1.length !== str2.length) {
@@ -121,6 +120,4 @@
         }
         return true;
     }
-
-
 })();
