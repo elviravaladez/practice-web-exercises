@@ -48,13 +48,13 @@
 
         //Loop over arr1 to check the amount of times the keys occur in the object
         for(let value of arr1) {
-            frequencyCounterOne[value] = (frequencyCounterOne[value] || 0) + 1
+            frequencyCounterOne[value] = (frequencyCounterOne[value] || 0) + 1;
             //add 1 to frequency counter IF it is already in there OR initialize it to one if it is not already in the object
         }
 
         //Loop over arr2 to check the amount of times the keys occur in the object
         for(let value of arr2) {
-            frequencyCounterTwo[value] = (frequencyCounterTwo[value] || 0) + 1
+            frequencyCounterTwo[value] = (frequencyCounterTwo[value] || 0) + 1;
             //add 1 to frequency counter OR initialize it to one if it is not already in the object
         }
 
@@ -88,6 +88,39 @@
 
     //Test
     sameSolutionTwo([1, 2, 3, 2], [9, 1, 4, 4]); //true
+
+
+    //Anagrams
+    //TODO: Given two strings, write a function to determine if the second string is an anagram of the first. An anagram is a word, phrase, or name formed by rearranging the letters of another, such as cinema, formed from iceman. Assume the string contains only lowercase letters
+    //Goal: Time Complexity - O(n)
+
+    // Examples:
+    validAnagram("",""); //true
+    validAnagram("aaz", "zza"); //false
+    validAnagram("anagram", "nagaram"); //true
+    validAnagram("rat", "car"); //false
+    validAnagram("awesome", "awesom"); //false
+    validAnagram("qwerty", "qeywrt"); //true
+    validAnagram("texttwisttime", "timetwisttext"); //true
+
+
+    //Time Complexity: O(N^2)
+    function validAnagram(str1, str2){
+        if (str1.length !== str2.length) {
+            return false;
+        }
+
+        let letterGroupOne = str1.split('');
+        let letterGroupTwo = str2.split('');
+        for (let char of letterGroupOne) {
+            let position = letterGroupTwo.indexOf(char);
+            if(position === -1) {
+                return false;
+            }
+            letterGroupTwo.splice(position, 1);
+        }
+        return true;
+    }
 
 
 })();
