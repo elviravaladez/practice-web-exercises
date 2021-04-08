@@ -195,4 +195,46 @@
     comp([121, 144, 19, 161, 19, 144, 19, 11], [132, 14641, 20736, 361, 25921, 361, 20736, 361]); //false
     comp([121, 144, 19, 161, 19, 144, 19, 11], [121, 14641, 20736, 36100, 25921, 361, 20736, 361]); //false
 
+
+    //Multiple Pointers
+    //----------------------------
+    //Creating pointers or values that correspond to an index or position and move towards the beginning, end or middle based on a certain condition
+    //Very efficient for solving problems w/minimal space complexity as well
+
+    //TODO: Write a function called sumZero which accepts a SORTED array of integers. The function should find the first pair where the sum is 0. Return an array that includes both values that sum to zero or undefined if a pair does not exist.
+    //Examples:
+    sumZero([-3, -2, -1, 0, 1, 2, 3]) // [-3, 3]
+    sumZero([-2, 0, 1, 3]) // undefined
+    sumZero([1, 2, 3]) // undefined
+
+    //Time Complexity: O(N^2)
+    //Space Complexity: O(1)
+    function sumZeroSolutionOne(arr) {
+        for(let i = 0; i < arr.length; i++) {
+            for(let j = i + 1; j < arr.length; j++) {
+                if(arr[i] + arr[j] === 0) {
+                    return [arr[i], arr[j]];
+                }
+            }
+        }
+    }
+
+    //Time Complexity: O(N)
+    //Space Complexity: O(1)
+    function sumZero(arr) {
+        let leftPointer = 0;
+        let rightPointer = arr.length - 1;
+
+        while(leftPointer < rightPointer) {
+            let sum = arr[leftPointer] + arr[rightPointer];
+            if(sum === 0) {
+                return [arr[leftPointer], arr[rightPointer]];
+            } else if(sum > 0) {
+                rightPointer--;
+            } else {
+                leftPointer++;
+            }
+        }
+    }
+
 })();
