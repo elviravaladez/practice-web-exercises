@@ -154,4 +154,48 @@
         }
         return true;
     }
+
+
+
+
+    //TODO: Given two arrays a and b write a function comp(a, b) (orcompSame(a, b)) that checks whether the two arrays have the "same" elements, with the same multiplicities. "Same" means, here, that the elements in b are the elements in a squared, regardless of the order.
+
+    function comp(array1, array2){
+        if(array1 === null || array2 === null) {
+            return false;
+        }
+
+        if(array1.length !== array2.length) {
+            return false;
+        }
+
+        let freqCounter1 = {};
+        let freqCounter2 = {};
+
+
+        for(let i of array1) {
+            freqCounter1[i] = (freqCounter1[i] || 0) + 1;
+        }
+
+        for(let i of array2) {
+            freqCounter2[i] = (freqCounter2[i] || 0) + 1;
+        }
+
+        for(let key in freqCounter1) {
+            if(!(key ** 2 in freqCounter2)) {
+                return false;
+            }
+
+            if(freqCounter2[key ** 2] !== freqCounter1[key]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    //Tests:
+    comp([121, 144, 19, 161, 19, 144, 19, 11], [121, 14641, 20736, 361, 25921, 361, 20736, 361]); //true
+    comp([121, 144, 19, 161, 19, 144, 19, 11], [132, 14641, 20736, 361, 25921, 361, 20736, 361]); //false
+    comp([121, 144, 19, 161, 19, 144, 19, 11], [121, 14641, 20736, 36100, 25921, 361, 20736, 361]); //false
+
 })();
