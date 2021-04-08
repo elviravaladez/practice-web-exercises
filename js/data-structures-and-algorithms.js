@@ -120,4 +120,38 @@
         }
         return true;
     }
+
+    //Time Complexity O(1)
+    function validAnagramSolution(str1, str2) {
+        if(str1.length !== str2.length) {
+            return false;
+        }
+
+        const search = {};
+
+        //loop over first string
+        for(let i = 0; i < str1.length; i++) {
+            let letter = str1[i];
+
+            //if letter exists, increment, else set to 1
+            if(search[letter]) {
+                search[letter] += 1;
+            } else {
+                search[letter] = 1;
+            }
+        }
+
+        //loop over second string
+        for(let i = 0; i < str2.length; i++) {
+            let letter = str2[i];
+
+            //if we can't find the letter (or the letter is 0) then it's not an anagram
+            if(!search[letter]) {
+                return false;
+            } else {
+                search[letter] -= 1;
+            }
+        }
+        return true;
+    }
 })();
