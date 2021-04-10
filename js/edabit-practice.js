@@ -2714,6 +2714,7 @@ export const baseData = 25;
 
 //CLASSES
 class Human {
+    //Usage (constructor functions)
     constructor() {
         this.gender = 'female';
     }
@@ -2734,7 +2735,6 @@ class Person extends Human {
     }
 }
 
-//Usage (constructor functions)
 const elvira = new Person()
 elvira.printMyName();
 elvira.printGender();
