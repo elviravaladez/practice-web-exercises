@@ -2655,3 +2655,58 @@ function reverseCase(str) {
     }
     return reversedStr.join('');
 }
+
+
+//Practice with ES6
+const myName = name => {
+    console.log(name);
+}
+
+const aNewName = (name, age) => {
+    console.log(name, age);
+}
+
+const multiply = num => num * 2;
+
+console.log(multiply(2)); //4
+
+
+//Exports and Imports (Modules)
+//person.js
+const person {
+    name: 'Elvira';
+}
+
+export default person
+
+//utility.js
+export const clean = () => {//code here
+}
+
+export const baseData = 25;
+
+//app.js
+//======================================
+//DEFAULT EXPORT (you can choose the name)
+//========================================
+//EX:
+//import person from './person.js'
+//import prs from './person.js'
+
+//======================================
+//NAMED EXPORT (name is defined by export)
+//IMPORTING from two different constants
+//======================================
+//EX:
+// import { baseData } from './utility.js'
+// import { clean } from './utility.js'
+// import { clean as Clean } from './utility.js'
+// import * as bundled from './utility.js'
+
+
+//imports default and ONLY export of the file
+//Name in the receiving file is up to the developer
+
+
+//JS code can be split up into multiple files
+//You can import content from another file
