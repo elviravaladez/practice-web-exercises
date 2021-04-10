@@ -2710,3 +2710,31 @@ export const baseData = 25;
 
 //JS code can be split up into multiple files
 //You can import content from another file
+
+
+//CLASSES
+class Human {
+    constructor() {
+        this.gender = 'female';
+    }
+
+    printGender() {
+        console.log(this.gender);
+    }
+}
+
+class Person extends Human {
+    //property
+    constructor() {
+        super();
+        this.name = 'Elvira';
+    }
+    printMyName() {
+        console.log(this.name);
+    }
+}
+
+//Usage (constructor functions)
+const elvira = new Person()
+elvira.printMyName();
+elvira.printGender();
