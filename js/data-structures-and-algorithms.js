@@ -201,7 +201,10 @@
     //Creating pointers or values that correspond to an index or position and move towards the beginning, end or middle based on a certain condition
     //Very efficient for solving problems w/minimal space complexity as well
 
-    //TODO: Write a function called sumZero which accepts a SORTED array of integers. The function should find the first pair where the sum is 0. Return an array that includes both values that sum to zero or undefined if a pair does not exist.
+    //TODO: Write a function called sumZero which accepts a SORTED array of integers.
+    // The function should find the first pair where the sum is 0.
+    // Return an array that includes both values that sum to zero or
+    // undefined if a pair does not exist.
     //Examples:
     sumZero([-3, -2, -1, 0, 1, 2, 3]) // [-3, 3]
     sumZero([-2, 0, 1, 3]) // undefined
@@ -236,5 +239,46 @@
             }
         }
     }
+
+    //Another Multiple Pointers Practice Exercise
+
+    //TODO:Implement a function called countUniqueValues,
+    // which accepts a sorted array, and counts the unique values in the array.
+    // There can be negative numbers in the array, but it will always be sorted.
+
+    //Tests
+    countUniqueValues([1,1,1,1,2]); //2
+    countUniqueValues([1,2,3,4,4,4,8,8,8,8,13,13,16]); //7
+    countUniqueValues([]); //0
+    countUniqueValues([-3, -2, -2, 0, 4]) //4
+
+    //start pointer at first two nums in the arr
+    //use the arr to store the unique values
+
+    //Time Complexity - O(n)
+    //Space Complexity - O(n)
+
+    //Solution One
+    //Only works with a sorted array
+    function countUniqueValues(arr) {
+        if(arr.length === 0) {
+            return 0;
+        }
+
+        let i = 0;
+
+        for(let j = 1; j < arr.length; j++) {
+
+            //comparing if i and j are NOT equal
+            if(arr[i] !== arr[j]) { //2 and 3
+                //move i up by one
+                i++;
+                //update the pointer only when we find two values that DO NOT match
+                arr[i] = arr[j]; //ex: 3 = 3;
+            }
+        }
+        return i + 1; //returns the number of unique values (the length of the updated arr)
+    }
+
 
 })();
