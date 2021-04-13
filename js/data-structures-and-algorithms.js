@@ -335,7 +335,6 @@
     binarySearch([1,2,3,4,5,6], 6) //5
     binarySearch([1,2,3,4,5,6], 11) //-1
 
-
     //Time Complexity Log(N)
     function binarySearch(arr, num) {
         let min = 0;
@@ -356,4 +355,45 @@
         return -1;
     }
 
+    //----------------------------
+    //TODO: Write a function called "sameFrequency." Given two positive integers, find
+    // out if the two numbers have the same frequency of digits.
+
+    //Tests:
+    sameFrequency(182, 281); //true
+    sameFrequency(34, 14); //false
+    sameFrequency(3589578, 5879385); //true
+    sameFrequency(22, 222);//false
+
+    //same numbers and same number count
+    function sameFrequency(num1, num2) {
+        let num1Str = num1.toString();
+        let num2Str = num2.toString();
+        if(num1Str.length !== num2Str.length) {
+            return false;
+        }
+
+        const search = {};
+
+        for(let i = 0; i < num1Str.length; i++) {
+            let individualDigit = num1Str[i];
+
+            if(search[individualDigit]) {
+                search[individualDigit] += 1;
+            } else {
+                search[individualDigit] = 1;
+            }
+        }
+
+        for(let i = 0; i < num2Str.length; i++) {
+            let individualDigit = num2Str[i];
+
+            if(!search[individualDigit]) {
+                return false;
+            } else {
+                search[individualDigit] -= 1;
+            }
+        }
+        return true;
+    }
 })();
