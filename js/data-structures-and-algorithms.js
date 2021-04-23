@@ -397,10 +397,15 @@
         return true;
     }
 
-    // Write a function called "isSubsequence" which takes in two strings and checks whether the characters in the first string form a subsequence of the characters in teh second string. In other words, the function should check whether the characters in the first string appear somewhere in the second string, without their order changing.
+    // TODO: Write a function called "isSubsequence" which takes in two strings and checks whether the characters in the first string form a subsequence of the characters in teh second string. In other words, the function should check whether the characters in the first string appear somewhere in the second string, without their order changing.
     function isSubsequence(str1, str2) {
         let i = 0;
         let j = 0;
+
+        if(!str1) {
+            return true;
+        }
+
         while(i < str1.length){
             if(j === str2.length) {
                 return false;
