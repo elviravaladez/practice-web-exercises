@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    text-align: center !important;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+    max-width: 80%;
+}
+
+.svg {
+    max-width: 100%;
+}
+
+#right-wheel, #left-wheel {
+    animation: wheel 2s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#man-on-bike {
+    animation: bike 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+
+#hat {
+    animation: hat 1s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes wheel {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes bike {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(20deg);
+    }
+}
+
+@keyframes hat {
+    from {
+        translateY(0%) rotateZ(0deg);
+    }
+    to {
+        transform: translateY(40%) rotateZ(20deg);
+    }
+}
