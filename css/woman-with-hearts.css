@@ -1,0 +1,45 @@
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    max-width: 80%;
+}
+
+svg {
+    max-width: 100%;
+}
+
+#heart-2, #heart-3 {
+     animation: heart-two-and-three 2s ease-in-out infinite;
+}
+
+#heart-4 {
+    animation: heart-four 2s ease-in-out infinite;
+}
+
+@keyframes heart-two-and-three {
+    from {
+        transform: translateY(10%);
+    }
+    to {
+        top: 200px;
+    }
+}
+
+@keyframes heart-four {
+    from {
+        transform: translateY(10%);
+    }
+    to {
+        top: 200px;
+    }
+}
