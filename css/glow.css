@@ -38,6 +38,13 @@ body {
     }
 }
 
+.glowing-div {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
 .glow-span-1 {
     --i:1;
 }
@@ -101,7 +108,7 @@ body {
 }
 
 .glow span:nth-child(3n + 2) {
-    animation: animate-reverse 3s alternate infinite;
+    animation: animate-reverse 4s alternate infinite;
 }
 
 .glow span:nth-child(3n + 3) {
@@ -114,7 +121,7 @@ body {
     }
 
     100% {
-        transform: rotate(360deg);
+        transform: rotate(250deg);
     }
 }
 
@@ -126,4 +133,16 @@ body {
     100% {
         transform: rotate(0deg);
     }
+}
+
+.navbar {
+    background: transparent !important;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: auto;
 }
