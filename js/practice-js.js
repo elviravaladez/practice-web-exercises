@@ -235,3 +235,12 @@ function jumpingOnClouds(c) {
     });
     return numberOfJumps;
 }
+
+//TODO: Write a JavaScript program to compare two objects to determine if the first one contains equivalent property values to the second one
+const compareObjects = (objectOne, objectTwo) => {
+    return Object.keys(objectTwo).every(key => objectOne.hasOwnProperty(key) && objectOne[key] === objectTwo[key]);
+}
+
+console.log(compareObjects({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true })); // true
+console.log(compareObjects({ hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true })); // false
+console.log(compareObjects({ hair: 'long', beard: true }, { age: 26, hair: 'long', beard: true })); // false
