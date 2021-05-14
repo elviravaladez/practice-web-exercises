@@ -251,3 +251,34 @@ const sayHola = (name = 'Cory') => {
 
 sayHola(); // "Hello, Cory!"
 sayHola('Topanga'); // "Hello, Topanga!"
+
+const individual = {
+    firstName: "Harry",
+    lastName: "Potter",
+    age: 16,
+    eyeColor: "brown"
+};
+
+console.log(individual[0]);
+console.log(individual[id]);
+
+let numbers = [2, 4, 6, 8, 10];
+let first = numbers.findIndex(numberFunction);
+
+const numberFunction = (value, index, array) => {
+    return value > 18;
+}
+
+let colors = ["red", "white", "blue"];
+let color;
+
+for (color of colors) {
+    console.log(colors);
+}
+
+let str = "supercalifragilisticexpialidocious";
+let char;
+
+for (char of str) {
+    console.log(char);
+}
