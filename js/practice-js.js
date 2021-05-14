@@ -244,3 +244,10 @@ const compareObjects = (objectOne, objectTwo) => {
 console.log(compareObjects({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true })); // true
 console.log(compareObjects({ hair: 'long', beard: true }, { age: 25, hair: 'long', beard: true })); // false
 console.log(compareObjects({ hair: 'long', beard: true }, { age: 26, hair: 'long', beard: true })); // false
+
+const sayHola = (name = 'Cory') => {
+    return `Hello, ${name}!`;
+}
+
+sayHola(); // "Hello, Cory!"
+sayHola('Topanga'); // "Hello, Topanga!"
